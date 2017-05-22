@@ -1,7 +1,7 @@
 // We don't need to concatenate ".scss" resulting files to one here, that's why we just import ".css" files
 
 // Helpers
-//@import 'helpers/fonts.css';
+@import 'helpers/fonts.css';
 @import 'helpers/typography.css';
 @import 'helpers/base.default.css';
 @import 'helpers/base.responsive.css';
