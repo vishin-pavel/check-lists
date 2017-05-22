@@ -108,6 +108,11 @@
 }
 
 .dropdown {
+    //padding-left: 8px;
+    //padding-right: 8px;
+    //&:hover {
+    //    background: rgba($default, .5);
+    //}
     &.dropdown-avatar {
         .dropdown-toggle {
             display: inline-block;
@@ -160,6 +165,7 @@
         }
     }
 }
+
 
 @keyframes dropdown-slide-left {
     0% {
