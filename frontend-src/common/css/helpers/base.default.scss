@@ -1451,8 +1451,8 @@ body {
             .single-page-block-header {
                 .single-page-block-header-menu {
                     @media (max-width: $md-max-width) {
-                        text-align: left;
-                        margin-top: 30px;
+                        //text-align: left;
+                        //margin-top: 5px;
                         ul {
                             margin-bottom: 0px;
                             li {
@@ -1460,7 +1460,13 @@ body {
                             }
                         }
                     }
+                    @media (max-width: $xs-max-width) {
+                        ul li {
+                            margin-right: 0px;
+                        }
+                    }
                 }
+
             }
         }
         .single-page-block {
@@ -1485,7 +1491,7 @@ body {
                             }
                         }
                         a {
-                            color: $black-lighten !important;
+                            color: $black-lighten-more !important;
                             &:hover {
                                 border-bottom: 1px solid rgba($black-lighten, .6);
                             }
@@ -1565,6 +1571,7 @@ body {
     width: 100%;
     color: $white;
     padding: 40px;
+    padding-bottom: 5px;
     .logo {
         max-width: 150px;
         height: 50px;
@@ -1579,7 +1586,6 @@ body {
             font-size: 16px;
             li {
                 margin-right: 20px;
-                text-transform: uppercase;
                 &:last-child {
                     margin-right: 0px;
                 }
@@ -1589,7 +1595,7 @@ body {
                     }
                 }
                 a {
-                    color: $white !important;
+                    color: $secondary !important;
                     line-height: 1.4;
                     display: inline-block;
                     font-weight: bold;
@@ -1616,7 +1622,7 @@ body {
                 margin-right: 0px;
             }
             a {
-                color: $black-lighten-more-more !important;
+                color: $black-lighten-more !important;
                 line-height: 1.4;
                 display: inline-block;
             }
@@ -1633,7 +1639,7 @@ body {
         .single-page-block-inner {
             background-color: $white;
             box-shadow: 0px 15px 70px -5px rgba($black, .13);
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             border-radius: 0px;
             max-width: 600px;
             padding: 60px 60px 30px;
