@@ -158,8 +158,8 @@ pre {
 nav.top-menu {
     height: 60px;
     background: $white;
-    border-bottom: 1px solid $gray-darken;
-    border: 1px solid $black;
+  border: 1px solid $gray-darken;
+  border-radius: 5px;
     z-index: 110;
     //position: fixed;
     //top: 0px;
