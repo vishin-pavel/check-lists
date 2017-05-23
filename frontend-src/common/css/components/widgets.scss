@@ -180,6 +180,9 @@
             z-index: 2;
             height: 100%;
         }
+      @media(max-width: $md-max-width) {
+        height: 200px;
+      }
     }
     &.background-primary, &.background-secondary, &.background-default, &.background-info,
     &.background-danger, &.background-warning, &.background-info, &.background-success {
@@ -198,15 +201,18 @@
     .counter-icon {
         position: absolute;
         left: 0px;
-        bottom: 0px;
+      bottom: -18px;
         margin-top: 18px;
         display: inline-block;
         color: $black-lighten-more;
         font-size: 36px;
+      @media(max-width: $md-max-width) {
+        bottom: -5px;
+      }
     }
     .counter-count {
         position: absolute;
-        bottom: -15px;
+      bottom: -35px;
         right: 5px;
         font-size: 42px;
         color: $black-lighten-more;
@@ -216,6 +222,9 @@
             margin-right: -4px;
             font-size: 32px;
         }
+      @media(max-width: $md-max-width) {
+        bottom: -5px;
+      }
     }
 }
 
