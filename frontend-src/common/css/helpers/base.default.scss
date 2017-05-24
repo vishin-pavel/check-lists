@@ -164,6 +164,11 @@ nav.top-menu {
     //top: 0px;
     //left: 0px;
     //right: 0px;
+    background: $gray-lighten-more;
+    background: -moz-linear-gradient(top, $gray-lighten-more 50%, $default 100%);
+    background: -webkit-linear-gradient(top, $gray-lighten-more 50%, $default 100%);
+    background: linear-gradient(to bottom, $gray-lighten-more 50%, $default 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray-lighten-more', endColorstr='$default', GradientType=0);
     &:before {
         display: block;
         content: '';
@@ -176,16 +181,16 @@ nav.top-menu {
     }
     &:after {
         position: relative;
-        top: -2px;
+        top: -1px;
         content: "";
         display: block;
-        height: 2px;
+        height: 1px;
         width: 100%;
         background: #ffffff;
-        background: -moz-linear-gradient(top, $white 0%, $default 100%);
-        background: -webkit-linear-gradient(top, $white 0%, $default 100%);
-        background: linear-gradient(to bottom, $white 0%, $default 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$default', GradientType=0);
+        background: -moz-linear-gradient(top, $black 0%, $default 100%);
+        //background: -webkit-linear-gradient(top, $gray-lighten-more 0%, $default 100%);
+        //background: linear-gradient(to bottom, $gray-lighten-more 0%, $default 100%);
+        //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray-lighten-more', endColorstr='$default', GradientType=0);
     }
     & + .page-content {
         margin-top: 0px;
@@ -196,11 +201,6 @@ nav.top-menu {
         margin: 12px 0px 0px 20px;
     }
     .menu {
-        background: $gray-lighten-more;
-        background: -moz-linear-gradient(top, $gray-lighten-more 50%, $default 100%);
-        background: -webkit-linear-gradient(top, $gray-lighten-more 50%, $default 100%);
-        background: linear-gradient(to bottom, $gray-lighten-more 50%, $default 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray-lighten-more', endColorstr='$default', GradientType=0);
         height: 60px;
         padding: 0px 16px;
         a {
@@ -285,8 +285,8 @@ nav.top-menu {
                 float: right;
             }
         }
-        @media (max-width: $xl-max-width) { .menu-info-block { margin-left: 25%; } }
-        @media (max-width: $md-max-width) { .menu-info-block { margin-left: 0; } }
+        @media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
+        @media (max-width: $md-max-width) { .menu-info-block { margin-left: -1.5%; } }
 
         .search-block {
             @include transition-slow();
