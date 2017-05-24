@@ -273,6 +273,105 @@
                 </div>
             </div>
         </div>
+        <section class="panel">
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="margin-bottom-50">
+                            <table class="table table-hover nowrap" id="example2" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Вопрос</th>
+                                    <th>Источник</th>
+                                    <th>Соблюдается</th>
+                                    <th>Не соблюдается</th>
+                                    <th>Не применимо</th>
+                                    <th>Примечания</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">
+                <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
+                    <i class="icmn-warning" aria-hidden="true"></i>
+                    Получить на email перечень нарушений
+                </button>
+            </div>
+        </div>
     </section>
+</div>
+<script>
+    $(function () {
+
+        $('#example1').DataTable({
+            responsive: true
+        });
+
+        $('#example2').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+
+        $('#example3').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+    });
+</script>
 </body>
 </html>
