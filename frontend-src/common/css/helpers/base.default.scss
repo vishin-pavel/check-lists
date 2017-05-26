@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: $font-text;
-    background: $gray;
+    background: $white;
     color: $black-lighten;
     overflow-x: hidden;
 }
@@ -869,6 +869,47 @@ nav.left-menu {
         & + .panel-footer {
             padding-top: 0px;
         }
+        .list-group-item {
+            &.height-fixed {
+                height: 100px;
+                overflow: hidden;
+                &:focus, &:hover {
+                    color: #555;
+                    text-decoration: none;
+                    background-color: #f5f5f5;
+                }
+                .list-group-item-right-block i {
+                    &.fa-unlock {
+                        color: $success;
+                    }
+                    &.fa-lock {
+                        color: $danger;
+                        padding-right: 10px;
+                    }
+                    &.fa-file-pdf-o {
+                        color: $danger;
+                    }
+                    &.fa-file-pdf-o:hover {
+                        color: $orange;
+                    }
+                    &.fa-check {
+                      color: $secondary;
+                    }
+                    &.fa-check.fa-check-added, &.fa-check:hover {
+                      color: $success;
+                    }
+                }
+            }
+        }
+        .panel-body-block-relative {
+            position: relative;
+            border: 0;
+            .bottom-right {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
     }
     .panel-footer {
         padding: 25px;
@@ -928,6 +969,9 @@ nav.left-menu {
                 margin-right: 240px;
             }
         }
+    }
+    &.panel-search-border-color {
+      border-color: $default;
     }
 }
 

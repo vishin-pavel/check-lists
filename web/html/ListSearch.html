@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Управление листами</title>
+    <title>Поиск листов</title>
 
     <link href="../assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
     <link href="../assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -192,190 +192,211 @@
                     <div class="panel-heading">
                         <h3 class="color-danger">Управление листами</h3>
                     </div>
-                    <div class="panel-body">
+                    <section class="panel-body">
                         <div class="row">
 
-                            <div class="panel-group accordion accordion-margin-bottom" role="tablist" aria-multiselectable="true" id="accordion">
-                                <div class="panel panel-default panel-search-border-color">
-                                    <div class="panel-heading collapsed" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <div class="panel-title">
-                                            <span class="accordion-indicator pull-right">
-                                                <i class="plus fa fa-plus"></i>
-                                                <i class="minus fa fa-minus"></i>
-                                            </span>
-                                            <a><h5>Поиск проверочного листа</h5></a>
-                                        </div>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h5>Поиск проверочного листа</h5>
                                     </div>
 
-                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
+                                    <div class="panel-body">
+
+                                    <!--<section class="panel">-->
+                                        <!--<div class="panel-heading">-->
+                                            <!---->
+                                            <!--<h3>Radio Buttons</h3>-->
+                                            <!---->
+                                        <!--</div>-->
+                                        <!--<div class="panel-body">-->
+                                            <!---->
+                                            <!--<div class="row"></div>-->
+                                            <!---->
+                                        <!--</div>-->
+                                    <!--</section>-->
 
 
-                                            <div class="panel-group accordion accordion-margin-bottom" role="tablist" aria-multiselectable="true" id="accordion-filters">
-                                                <div class="panel panel-default">
+                                        <div class="panel-group accordion accordion-margin-bottom" role="tablist" aria-multiselectable="true" id="accordion-filters">
+                                            <div class="panel panel-default">
 
-                                                    <div class="panel-heading collapsed" role="tab" id="headingFiltersOne" data-toggle="collapse" data-parent="#accordion-filters" data-target="#collapseFiltersOne" aria-expanded="true" aria-controls="collapseFiltersOne">
-                                                        <div class="panel-title">
-                                                            <span class="accordion-indicator pull-right">
-                                                                <i class="plus fa fa-plus"></i>
-                                                                <i class="minus fa fa-minus"></i>
-                                                            </span>
-                                                            <a><p class="color-primary">Фильтры (не обязательно)</p></a>
-                                                        </div>
+                                                <div class="panel-heading collapsed" role="tab" id="headingFiltersOne" data-toggle="collapse" data-parent="#accordion-filters" data-target="#collapseFiltersOne" aria-expanded="true" aria-controls="collapseFiltersOne">
+                                                    <div class="panel-title">
+                                                        <span class="accordion-indicator pull-right">
+                                                            <i class="plus fa fa-plus"></i>
+                                                            <i class="minus fa fa-minus"></i>
+                                                        </span>
+                                                        <a><p class="color-primary">Фильтры (не обязательно)</p></a>
                                                     </div>
-
-                                                    <div id="collapseFiltersOne" class="panel-collapse collapseqqqqqqqqqqqq" role="tabpanel" aria-labelledby="headingFiltersOne">
-                                                        <div class="panel-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Орган</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="form-control">
-                                                                                <option>Ростехнадзор</option>
-                                                                                <option disabled>Option 2 (disabled)</option>
-                                                                                <option>Option 3</option>
-                                                                                <option>Option 4</option>
-                                                                                <option>Option 5</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид надзора/контроля</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="select2">
-                                                                                <option>Атомный надзор</option>
-                                                                                <option disabled>Вид надзора 2</option>
-                                                                                <option>Вид надзора 3</option>
-                                                                                <option>Вид надзора 4</option>
-                                                                                <option>Вид надзора 5</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид деятельности</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="select2">
-                                                                                <option>Юридическое лицо</option>
-                                                                                <option>Индивидуальный предприниматель</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид производственных объектов</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="select2">
-                                                                                <option>Опасный объект</option>
-                                                                                <option>Без класса опасности</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Категория риска</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="select2">
-                                                                                <option>1</option>
-                                                                                <option>2</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="margin-bottom-20">
-                                                                        <div class="form-group">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input name="example6" checked="" type="checkbox">
-                                                                                    <p class="margin-top-3 margin-left-5 margin-bottom-0">Класс опасности</p>
-                                                                                </label>
-                                                                            </div>
-                                                                            <select class="select2">
-                                                                                <option>1 класс</option>
-                                                                                <option>2 класс</option>
-                                                                                <option>3 класс</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
                                                 </div>
-                                            </div>
 
-
-                                            <div class="search-block">
-                                                <div class="form-input-icon form-input-icon-right">
-                                                    <i class="icmn-search"></i>
-                                                    <input class="form-control form-control-sm form-control-rounded" placeholder="Введите наименование..." type="text">
-                                                    <button type="submit" class="search-block-submit "></button>
-                                                </div>
-                                            </div>
-                                            <!--<a href=""><p>Расширенный поиск</p></a>-->
-                                            <div class="panel-body-block-relative">
-                                                <section class="panel pull-left margin-top-15">
-                                                    <div class="panel-heading">
-                                                        <h6 class="margin-bottom-15">Где искать</h6>
-                                                    </div>
+                                                <div id="collapseFiltersOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiltersOne">
                                                     <div class="panel-body">
-                                                        <div class="form-group margin-bottom-0">
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input name="search-checkbox" checked="" type="radio">
-                                                                    <p class="margin-left-5 margin-bottom-0">в названии</p>
-                                                                </label>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Орган</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="form-control">
+                                                                            <option>Ростехнадзор</option>
+                                                                            <option disabled>Option 2 (disabled)</option>
+                                                                            <option>Option 3</option>
+                                                                            <option>Option 4</option>
+                                                                            <option>Option 5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид надзора/контроля</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="select2">
+                                                                            <option>Атомный надзор</option>
+                                                                            <option disabled>Вид надзора 2</option>
+                                                                            <option>Вид надзора 3</option>
+                                                                            <option>Вид надзора 4</option>
+                                                                            <option>Вид надзора 5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид деятельности</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="select2">
+                                                                            <option>Юридическое лицо</option>
+                                                                            <option>Индивидуальный предприниматель</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group margin-bottom-0">
-                                                            <div class="radio">
-                                                                <label>
-                                                                    <input name="search-checkbox" checked="" type="radio">
-                                                                    <p class="margin-left-5 margin-bottom-0">в тексте документа</p>
-                                                                </label>
+                                                            <div class="col-lg-6">
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Вид производственных объектов</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="select2">
+                                                                            <option>Опасный объект</option>
+                                                                            <option>Без класса опасности</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Категория риска</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="select2">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="margin-bottom-20">
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input name="example6" checked="" type="checkbox">
+                                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Класс опасности</p>
+                                                                            </label>
+                                                                        </div>
+                                                                        <select class="select2">
+                                                                            <option>1 класс</option>
+                                                                            <option>2 класс</option>
+                                                                            <option>3 класс</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </section>
-                                                <button type="button" class="bottom-right btn btn-primary margin-top-10 margin-bottom-10">
-                                                    <i class="fa fa-search" aria-hidden="true"> Искать форму</i>
-                                                </button>
-                                                <div class="clearfix"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="search-block">
+                                            <div class="form-input-icon form-input-icon-right">
+                                                <i class="icmn-search"></i>
+                                                <input class="form-control form-control-sm form-control-rounded" placeholder="Введите наименование..." type="text">
+                                                <button type="submit" class="search-block-submit"></button>
+                                            </div>
+                                        </div>
+                                        <!--<a href=""><p>Расширенный поиск</p></a>-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <section class="panel pull-left margin-top-15">
+                                                        <div class="panel-heading">
+                                                            <h6 class="margin-bottom-15">Где искать</h6>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="form-group margin-bottom-0">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input name="search-checkbox" checked="" type="radio">
+                                                                        <p class="margin-left-5 margin-bottom-0">в названии</p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group margin-bottom-0">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input name="search-checkbox" checked="" type="radio">
+                                                                        <p class="margin-left-5 margin-bottom-0">в тексте документа</p>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                                <div class="col-lg-4 margin-top-15">
+                                                    <div class="pull-left">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input name="example6" type="checkbox">
+                                                                <p class="margin-top-3 margin-left-5 margin-bottom-0">Только отложенные в мой список</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 margin-top-15">
+                                                    <button type="button" class="pull-right btn btn-small btn-primary margin-top-10 margin-bottom-10">
+                                                        <i class="fa fa-search" aria-hidden="true"> Искать форму</i>
+                                                    </button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <span class="spanvmiddle"></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                         <div class="row">
-                            <button type="button" class="left btn btn-success margin-bottom-15 margin-top-15 margin-left-15">
-                                <i class="fa fa-plus" aria-hidden="true"> Добавить новый</i>
-                            </button>
+                            <div class="pull-left margin-bottom-10 margin-top-20 margin-left-15">
+                                <h4 class="color-danger">Результаты поиска</h4>
+                            </div>
                             <nav class="pull-right">
                                 <ul class="pagination">
                                     <li class="page-item">
@@ -406,49 +427,37 @@
                             <div class="list-group">
                                 <div class="list-group-item height-fixed">
                                     <div class="row">
-                                        <div class="col-md-8 col-sm-7 col-xs-7">
+                                        <div class="col-xs-10">
                                             <h5 class="list-group-item-heading">Минтранс РФ</h5>
                                             <p>Чек-лист проверки соблюдения требования по обеспечению транспортной безопасности, учитывающие уровни безопасности для различных
                                                 категорий объектов транспортной инфраструктуры и транспортных средств воздушного транспорта.</p>
                                         </div>
-                                        <div class="col-md-2 col-sm-2 col-xs-2 text-center">
-                                            <p class="margin-top-30">01/03/2017</p>
-                                        </div>
-                                        <div class="col-md-2 col-sm-3 col-xs-3 list-group-item-right-block">
-                                            <!--<a href="#"><i class="fa fa-file-pdf-o fa-2x pull-left margin-top-25 margin-left-20" aria-hidden="true"></i></a>-->
-                                            <a href="#"><i class="fa fa-unlock fa-2x pull-right margin-top-25" aria-hidden="true"></i></a>
+                                        <div class="col-xs-2 list-group-item-right-block">
+                                            <a href="#"><i class="fa fa-check fa-check-added fa-3x pull-right margin-top-25" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="list-group-item height-fixed">
                                     <div class="row">
-                                        <div class="col-md-8 col-sm-7 col-xs-7">
+                                        <div class="col-xs-10">
                                             <h5 class="list-group-item-heading">Минтранс РФ</h5>
                                             <p>Чек-лист проверки соблюдения требования по обеспечению транспортной безопасности, учитывающие уровни безопасности для различных
                                                 категорий объектов транспортной инфраструктуры и транспортных средств воздушного транспорта.</p>
                                         </div>
-                                        <div class="col-md-2 col-sm-2 col-xs-2 text-center">
-                                            <p class="margin-top-30">01/03/2017</p>
-                                        </div>
-                                        <div class="col-md-2 col-sm-3 col-xs-3 list-group-item-right-block">
-                                            <a href="#"><i class="fa fa-file-pdf-o fa-2x pull-left margin-top-25 margin-left-20" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-unlock fa-2x pull-right margin-top-25" aria-hidden="true"></i></a>
+                                        <div class="col-xs-2 list-group-item-right-block">
+                                            <a href="#"><i class="fa fa-check fa-3x pull-right margin-top-25" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="list-group-item height-fixed">
                                     <div class="row">
-                                        <div class="col-md-8 col-sm-7 col-xs-7">
+                                        <div class="col-xs-10">
                                             <h5 class="list-group-item-heading">Минтранс РФ</h5>
                                             <p>Чек-лист проверки соблюдения требования по обеспечению транспортной безопасности, учитывающие уровни безопасности для различных
                                                 категорий объектов транспортной инфраструктуры и транспортных средств воздушного транспорта.</p>
                                         </div>
-                                        <div class="col-md-2 col-sm-2 col-xs-2 text-center">
-                                            <p class="margin-top-30">01/03/2017</p>
-                                        </div>
-                                        <div class="col-md-2 col-sm-3 col-xs-3 list-group-item-right-block">
-                                            <a href="#"><i class="fa fa-file-pdf-o fa-2x pull-left margin-top-25 margin-left-20" aria-hidden="true"></i></a>
-                                            <a href="#"><i class="fa fa-lock fa-2x pull-right margin-top-25" aria-hidden="true"></i></a>
+                                        <div class="col-xs-2 list-group-item-right-block">
+                                            <a href="#"><i class="fa fa-check fa-3x pull-right margin-top-25" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </div>
