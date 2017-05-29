@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="../assets/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/cleanhtmlvideoplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/datatables/media/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/chartist/dist/chartist.min.css">
+    <!-- v1.4.0 -->
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/jquery-steps/demo/css/jquery.steps.css">
+    <!-- v1.4.2 -->
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <!-- v1.7.0 -->
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/dropify/dist/css/dropify.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/common/css/main.css">
+    <link rel="stylesheet" href="../assets/common/css/helpers/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../assets/common/css/Secondary.css">
+
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/tether/dist/js/tether.min.js"></script>
+    <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="../assets/vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+    <script src="../assets/vendors/spin.js/spin.js"></script>
+    <script src="../assets/vendors/ladda/dist/ladda.min.js"></script>
+    <script src="../assets/vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="../assets/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="../assets/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="../assets/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="../assets/vendors/autosize/dist/autosize.min.js"></script>
+    <script src="../assets/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="../assets/vendors/moment/min/moment.min.js"></script>
+    <script src="../assets/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../assets/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../assets/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="../assets/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+    <script src="../assets/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="../assets/vendors/summernote/dist/summernote.min.js"></script>
+    <script src="../assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../assets/vendors/nestable/jquery.nestable.js"></script>
+    <script src="../assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/vendors/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="../assets/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../assets/vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="../assets/vendors/d3/d3.min.js"></script>
+    <script src="../assets/vendors/c3/c3.min.js"></script>
+    <script src="../assets/vendors/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/vendors/peity/jquery.peity.min.js"></script>
+    <!-- v1.0.1 -->
+    <script src="../assets/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- v1.1.1 -->
+    <script src="../assets/vendors/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="../assets/vendors/hackertyper/hackertyper.js"></script>
+    <script src="../assets/vendors/jquery-countTo/jquery.countTo.js"></script>
+    <!-- v1.4.0 -->
+    <script src="../assets/vendors/nprogress/nprogress.js"></script>
+    <script src="../assets/vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <!-- v1.4.2 -->
+    <script src="../assets/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../assets/vendors/chart.js/src/Chart.bundle.min.js"></script>
+    <!-- v1.7.0 -->
+    <script src="../assets/vendors/dropify/dist/js/dropify.min.js"></script>
+
+    <!-- Clean UI Scripts -->
+    <script src="../assets/common/js/common.js"></script>
+    <script src="../assets/common/js/demo.temp.js"></script>
+    <script src="../assets/common/js/helper.js"></script>
+    <title>ListFill</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-page margin-top-50 margin-bottom-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1>
+                        <span class="color-danger">Проверочные листы</span>
+                        <h6 class="color-info">
+                            государственного контроля (надзора), муниципального контроля и самопроверки ЮЛ и ИП.
+                        </h6>
+                    </h1>
+                </div>
+                <div class="col-md-3">
+                    <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов,
+                        утвержденных
+                        постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="top-menu">
+
+            <div class="menu-icon-container hidden-md-up">
+                <div class="animate-menu-button left-menu-toggle">
+                    <div><!-- --></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-language-block">
+                    <div class="dropdown">
+                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <span class="" href="javascript:void(0);">Eng</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                            <div class="dropdown-header">Active</div>
+                            <a class="dropdown-item" href="javascript:void(0)">Project Management</a>
+                            <a class="dropdown-item" href="javascript:void(0)">User Inetrface Development</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Documentation</a>
+                            <div class="dropdown-header">Inactive</div>
+                            <a class="dropdown-item" href="javascript:void(0)">Marketing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog"></i>
+                                Settings</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info-block hidden-sm-down">
+                    <div class="left">
+                        <div class="header-buttons">
+                            <div class="button">
+                                <a href="javascript: void(0);" class="">
+                                    <span class="hidden-sm-down">Главная</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div>
+                            <div class="button">
+                                <a href="javascript: void(0);" class="">
+                                    <span class="hidden-sm-down">Работа с листами</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div>
+                            <div class="button">
+                                <a href="javascript: void(0);" class="" aria-expanded="false">
+                                    <span class="hidden-sm-down">Всё о проверочных листах</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div>
+                            <div class="dropdown button">
+                                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <span class="hidden-sm-down">Личный кабинет</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-user"></i> Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-header">Home</div>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-circle-right"></i> System Dashboard</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-circle-right"></i> User Boards</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-circle-right"></i> Issue Navigator (35 New)</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-exit"></i> Logout</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="page-content margin-top-50">
+        <h2 class="text-center color-danger">Чек-лист проверки соблюдения требований по обеспечению траспортной
+            безопасности, учитывающие уровни безопасности для различных категорий объектов транспортной инфраструктуры и
+            траспортных средств воздушного транспорта.</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-heading background-default">
+                        <h5><a href="#" class="color-white">Подробнее о проверочном листе</a></h5>
+                    </div>
+                    <div class="panel-body margin-top-5">
+                        <span>Орган: <code>Минтранс РФ</code></span><br>
+                        <span>Вид надзора: <code>Проверка соблюдения требований по обеспечению транспортной безопасности</code></span><br>
+                        <span>Вид деятельности: <code>Эксплуатация объектов транспортной инфраструктуры и транспортных средств воздушного транспорта</code></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top-20">
+            <div class="col-md-8">
+                <p>Проверочный лист можно отправить себе на email в виде бланка, чтобы затем распечатать и заполнить на
+                    бумаге. Либо заполняйте лист здесь on-line, а затем отправляйте на почту только список выявленных
+                    нарушенийю</p>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-icon btn-primary btn-block margin-inline">
+                    <i class="icmn-envelop3" aria-hidden="true"></i>
+                    Получить бланк на email
+                </button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-heading background-default">
+                        <h5><a href="#" class="color-white">Область ввода полей шапки</a></h5>
+                    </div>
+                    <div class="panel-body margin-top-5">
+                        <div class="row margin-bottom-5">
+                            <div class="col-md-4">
+                                <label class="form-control-label" for="l0">Наименование проверочного листа</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" placeholder="" id="l8">
+                                    <span class="input-group-btn">
+                                            <a href="javascript: void(0);" class="btn btn-success">
+                                                Ввод
+                                            </a>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-5">
+                            <div class="col-md-4">
+                                <label class="form-control-label" for="l0">Наименование контрольного органа</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" placeholder="" id="l8">
+                                    <span class="input-group-btn">
+                                            <a href="javascript: void(0);" class="btn btn-success">
+                                                Ввод
+                                            </a>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-5">
+                            <div class="col-md-4">
+                                <label class="form-control-label" for="l0">Вид контроля</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" placeholder="" id="l8">
+                                    <span class="input-group-btn">
+                                            <a href="javascript: void(0);" class="btn btn-success">
+                                                Ввод
+                                            </a>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-5">
+                            <div class="col-md-4">
+                                <label class="form-control-label padding-0" for="l0">Указание на ограничение предмета
+                                    плановой
+                                    проверки обязательными требованиями </label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" placeholder="" id="l8">
+                                    <span class="input-group-btn">
+                                            <a href="javascript: void(0);" class="btn btn-success">
+                                                Ввод
+                                            </a>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="form-control-label padding-0" for="l0">Реквизиты правового акта об
+                                    утверждении формы
+                                    проверочного листа </label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" placeholder="" id="l8">
+                                    <span class="input-group-btn">
+                                            <a href="javascript: void(0);" class="btn btn-success">
+                                                Ввод
+                                            </a>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="panel">
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="margin-bottom-50">
+                            <table class="table table-hover nowrap" id="example2" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Вопрос</th>
+                                    <th>Источник</th>
+                                    <th>Соблюдается</th>
+                                    <th>Не соблюдается</th>
+                                    <th>Не применимо</th>
+                                    <th class="text-center">Примечания</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Назначить лицо ответственное за обеспечение транспортной безопасности в субъекте
+                                        транспортной инфраструктуры
+                                    </td>
+                                    <td><p class="text-center">п.3.2</p></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><input type="checkbox" name="example6" class="center-block"></td>
+                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">
+                <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
+                    <i class="icmn-warning" aria-hidden="true"></i>
+                    Получить на email перечень нарушений
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="cwt__footer visible-footer">
+        <div class="cwt__footer__bottom">
+            <div class="row">
+                <div class="col-md-4">
+                    © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные
+                    листы"</a>
+                </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+
+        $('#example1').DataTable({
+            responsive: true
+        });
+
+        $('#example2').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+
+        $('#example3').DataTable({
+            autoWidth: true,
+            scrollX: true,
+            fixedColumns: true
+        });
+    });
+</script>
+</body>
+</html>
