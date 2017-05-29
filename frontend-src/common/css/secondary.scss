@@ -1,13 +1,15 @@
 .capabilities {
-  border: 1px solid #000000;
+  border: 1px solid #eceff4;
   border-radius: 5px;
   padding: 10px 5px;
   background-color: #ffffff;
-  color: #000000;
 }
 
 .faq .nav-tabs-horizontal {
-  border: 1px solid #000000;
-  height: 395px;
+  border: 1px solid #eceff4;
+  min-height: 393px;
   border-radius: 5px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
