@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Проверочные листы</title>
 
+    <link href="../assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="../assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="../assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="../assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="../assets/common/img/favicon.png" rel="icon" type="image/png">
+    <link href="../../frontend-src/vendors/bower/datatables/media/images/favicon.ico" rel="shortcut icon">
 
+    <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Vendors Styles -->
+    <!-- v1.0.0 -->
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
     <link rel="stylesheet" type="text/css" href="../assets/vendors/ladda/dist/ladda-themeless.min.css">
@@ -30,11 +45,12 @@
     <!-- v1.7.0 -->
     <link rel="stylesheet" type="text/css" href="../assets/vendors/dropify/dist/css/dropify.min.css">
 
+    <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="../assets/common/css/main.css">
     <link rel="stylesheet" href="../assets/common/css/helpers/fonts.css">
-    <link rel="stylesheet" type="text/css" href="../assets/common/css/Secondary.css">
 
-
+    <!-- Vendors Scripts -->
+    <!-- v1.0.0 -->
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="../assets/vendors/tether/dist/js/tether.min.js"></script>
     <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -87,156 +103,255 @@
     <script src="../assets/common/js/common.js"></script>
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
-    <title>Home Page</title>
 </head>
-<body>
-<div class="header-page margin-bottom-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <h1>
-                    <span class="color-danger">Проверочные листы</span>
-                    <h6 class="color-info">
-                        государственного контроля (надзора), муниципального контроля и самопроверки ЮЛ и ИП.
-                    </h6>
-                </h1>
-            </div>
-            <div class="col-md-3">
-                <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов, утвержденных
-                    постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177
-                </small>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="content-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <label class="form-control-label" for="l8"><h4>Поиск</h4></label>
-            </div>
-            <div class="col-md-6">
-                <div class="search-block">
-                    <div class="form-input-icon form-input-icon-right">
-                        <i class="icmn-search"></i>
-                        <input type="text" class="form-control form-control-sm"
-                               placeholder="Искать проверочный лист...">
-                        <button type="submit" class="search-block-submit "></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-md-push-1 text-center">
-                <h4>
-                    <i class="icmn-search"></i>
-                    <a href="#"><span>Расширенный поиск листов</span></a>
-                </h4>
-            </div>
-        </div>
-        <div class="row margin-top-50">
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-question font-size-70"></i>
-                    <h2>УЗНАТЬ</h2>
-                    <p class="text-left font-size-20">Получите свежую подробную информацию о приминении проверочных
-                        листов</p>
-                </div>
-            </div>
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-lamp4 font-size-70"></i>
-                    <h2>ИЗУЧИТЬ</h2>
-                    <p class="text-left font-size-20">Научитель эффективно применять проверочные листы</p>
-                </div>
-            </div>
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-checkbox-checked font-size-70"></i>
-                    <h2>ПРИМЕНИТЬ</h2>
-                    <p class="text-left font-size-20">Проведите проверку в электронном сервисе</p>
-                </div>
-            </div>
-        </div>
-        <div class="row faq">
-            <div class="col-md-4">
-                <div class="nav-tabs-horizontal">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
-                               data-target="#home1" role="tab" aria-expanded="true">Предпринимателям</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript: void(0);" data-toggle="tab" data-target="#profile1"
-                               role="tab" aria-expanded="false">Госслужащим</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content padding-vertical-20">
-                        <div class="tab-pane active" id="home1" role="tabpanel" aria-expanded="true">
-                            <a href="#">Я новый пользователь. С чего начать?</a><br>
-                            <a href="#">Новое о проверочных листах</a>
-                        </div>
-                        <div class="tab-pane" id="profile1" role="tabpanel" aria-expanded="false">
-
-                            Mel, incorruptis confidam derepta inportuno perpetuam placatae. Expetenda summam
-                            venandi cotidie euripidis vexetur, scribendi recta fortunam
-                            hanc oblivione. Iniuria ipso statuam utrumque asperiores
-                            eae cogitemus, evertitur triarium perspexit conclusionemque
-                            propterea repellendus agatur scilicet, leniter intervalla
-                            nocet praeterierunt tuum privatione, senserit sale vias,
-                            delectatum dedecora ratione o religionis derigatur diuturnum
-                            arbitrantur conspiratione, legam opera splendore iste democritum
-                            apte romanum legum egregios.
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
+<body class="theme-blue menu-fixed">
+<div class="container">
+    <div class="row">
+        <div class="header-page margin-top-50 margin-bottom-20" style="">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="widget widget-seven">
-                            <div class="widget-body">
-                                <div href="javascript: void(0);" class="widget-body-inner">
-                                    <p class="font-size-16">Проверочных листов размещено на портале</p>
-                                    <i class="counter-icon icmn-book"></i>
-                                    <span class="counter-count">
+                    <div class="col-md-9">
+                        <h1>
+                            <span class="color-danger">Проверочные листы</span>
+                            <h6 class="color-info">
+                                государственного контроля (надзора), муниципального контроля и самопроверки ЮЛ и ИП.
+                            </h6>
+                        </h1>
+                    </div>
+                    <div class="col-md-3">
+                        <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов,
+                            утвержденных
+                            постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="top-menu box-shadow">
+            <div class="menu-icon-container hidden-md-up">
+                <div class="animate-menu-button left-menu-toggle">
+                    <div><!-- --></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-language-block">
+                    <div class="dropdown">
+                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <span class="" href="javascript:void(0);"><i class="dropdown-icon icmn-flag"></i> Rus</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                            <!--<div class="dropdown-header">Active</div>-->
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>Russian</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>English</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info-block hidden-sm-down">
+                    <div class="left">
+                        <div class="header-buttons">
+                            <div class="button">
+                                <a href="javascript: void(0);" class="">
+                                    <span class="hidden-sm-down">Главная</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div><!--
+                         -->
+                            <div class="button">
+                                <a href="javascript: void(0);" class="">
+                                    <span class="hidden-sm-down">Работа с листами</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div><!--
+                         -->
+                            <div class="button">
+                                <a href="javascript: void(0);" class="" aria-expanded="false">
+                                    <span class="hidden-sm-down">Всё о проверочных листах</span>
+                                    <span class="caret"></span>
+                                </a>
+                            </div><!--
+                         -->
+                            <div class="button dropdown">
+                                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                   aria-expanded="false">
+                                    <span class="hidden-sm-down">Личный кабинет</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-user"></i> Профиль</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i
+                                            class="dropdown-icon icmn-exit"></i> Выход</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="page-content">
+            <div class="page-content-inner">
+
+                <div class="content-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <label class="form-control-label" for="l8"><h4>Поиск</h4></label>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="search-block">
+                                    <div class="form-input-icon form-input-icon-right">
+                                        <i class="icmn-search"></i>
+                                        <input type="text" class="form-control form-control-sm"
+                                               placeholder="Искать проверочный лист...">
+                                        <button type="submit" class="search-block-submit "></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-md-push-1 text-center">
+                                <h4>
+                                    <i class="icmn-search"></i>
+                                    <a href="#"><span>Расширенный поиск листов</span></a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row margin-top-50">
+                            <div class="col-md-4 info-title">
+                                <div class="margin-bottom-50 text-center capabilities">
+                                    <i class="icmn-question font-size-70"></i>
+                                    <h2>УЗНАТЬ</h2>
+                                    <p class="text-left font-size-20">Получите свежую подробную информацию о приминении
+                                        проверочных
+                                        листов</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 info-title">
+                                <div class="margin-bottom-50 text-center capabilities">
+                                    <i class="icmn-lamp4 font-size-70"></i>
+                                    <h2>ИЗУЧИТЬ</h2>
+                                    <p class="text-left font-size-20">Научитель эффективно применять проверочные
+                                        листы</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 info-title">
+                                <div class="margin-bottom-50 text-center capabilities">
+                                    <i class="icmn-checkbox-checked font-size-70"></i>
+                                    <h2>ПРИМЕНИТЬ</h2>
+                                    <p class="text-left font-size-20">Проведите проверку в электронном сервисе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row faq">
+                            <div class="col-md-4">
+                                <div class="nav-tabs-horizontal">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
+                                               data-target="#home1" role="tab" aria-expanded="true">Предпринимателям</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript: void(0);" data-toggle="tab"
+                                               data-target="#profile1"
+                                               role="tab" aria-expanded="false">Госслужащим</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content padding-vertical-20">
+                                        <div class="tab-pane active" id="home1" role="tabpanel" aria-expanded="true">
+                                            <a href="#">Я новый пользователь. С чего начать?</a><br>
+                                            <a href="#">Новое о проверочных листах</a>
+                                        </div>
+                                        <div class="tab-pane" id="profile1" role="tabpanel" aria-expanded="false">
+
+                                            Mel, incorruptis confidam derepta inportuno perpetuam placatae. Expetenda
+                                            summam
+                                            venandi cotidie euripidis vexetur, scribendi recta fortunam
+                                            hanc oblivione. Iniuria ipso statuam utrumque asperiores
+                                            eae cogitemus, evertitur triarium perspexit conclusionemque
+                                            propterea repellendus agatur scilicet, leniter intervalla
+                                            nocet praeterierunt tuum privatione, senserit sale vias,
+                                            delectatum dedecora ratione o religionis derigatur diuturnum
+                                            arbitrantur conspiratione, legam opera splendore iste democritum
+                                            apte romanum legum egregios.
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="widget widget-seven capabilities">
+                                            <div class="widget-body">
+                                                <div href="javascript: void(0);" class="widget-body-inner">
+                                                    <p class="font-size-16">Проверочных листов размещено на портале</p>
+                                                    <i class="counter-icon icmn-book color-black"></i>
+                                                    <span class="counter-count color-black">
                                 <span class="counter-init" data-from="0" data-to="67">375</span>
                             </span>
-                                </div>
-                            </div>
-                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                    </div>
-                    <div class="col-md-6">
-                        <div class="widget widget-seven">
-                            <div class="widget-body">
-                                <div href="javascript: void(0);" class="widget-body-inner">
-                                    <p class="font-size-16">Выполнено проверок с использованием листов</p>
-                                    <i class="counter-icon icmn-users"></i>
-                                    <span class="counter-count">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="widget widget-seven capabilities">
+                                            <div class="widget-body">
+                                                <div href="javascript: void(0);" class="widget-body-inner">
+                                                    <p class="font-size-16">Выполнено проверок с использованием
+                                                        листов</p>
+                                                    <i class="counter-icon icmn-users color-black"></i>
+                                                    <span class="counter-count color-black">
                                 <span class="counter-init" data-from="0" data-to="67">12675</span>
                             </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="panel capabilities">
+                                            <div class="panel-heading">
+                                                <h5>Недавно размещены</h5>
+                                            </div>
+                                            <div class="panel-body">
+                                                <p>Проверка соблюдения требования по обеспечению требований пожарной
+                                                    безопасности</p>
+                                                <span>Разработчик: <code>Минобрнауки России</code></span><br>
+                                                <span>Дата размещения: <code>4 мая 2017 г.</code></span><br>
+                                                <span>Вид: <code>Проект ведомственного акта</code></span>
+                                            </div>
+                                        </section>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+            </div>
+        </section>
+
+        <div class="cwt__footer visible-footer">
+            <div class="cwt__footer__bottom">
                 <div class="row">
-                    <div class="col-md-12">
-                        <section class="panel">
-                            <div class="panel-heading">
-                                <h5>Недавно размещены</h5>
-                            </div>
-                            <div class="panel-body">
-                                <p>Проверка соблюдения требования по обеспечению требований пожарной безопасности</p>
-                                <span>Разработчик: <code>Минобрнауки России</code></span><br>
-                                <span>Дата размещения: <code>4 мая 2017 г.</code></span><br>
-                                <span>Вид: <code>Проект ведомственного акта</code></span>
-                            </div>
-                        </section>
+                    <div class="col-md-4">
+                        © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал
+                        "Проверочные листы"</a>
                     </div>
+                    <div class="col-md-8"></div>
                 </div>
             </div>
         </div>
+        <div class="main-backdrop"><!-- --></div>
     </div>
 </div>
 </body>
