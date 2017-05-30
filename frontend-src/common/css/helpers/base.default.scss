@@ -160,10 +160,10 @@ nav.top-menu {
     background: $white;
     border-bottom: 1px solid $gray-darken;
     z-index: 110;
-    //position: fixed;
-    //top: 0px;
-    //left: 0px;
-    //right: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     &:before {
         display: block;
         content: '';
@@ -189,13 +189,17 @@ nav.top-menu {
             display: block;
             height: 100%;
             color: $black-light;
-          padding-left: 8px;
-          padding-right: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
         }
         .button {
-            a:hover, a:focus {
-                color: $black;
-                border-bottom: 2px solid $danger;
+            a {
+                &.button-toggle, &.dropdown-toggle {
+                    &:hover, &:focus {
+                        color: $black;
+                        border-bottom: 2px solid $danger;
+                    }
+                }
             }
             .dropdown-menu {
                 a:hover, a:focus {
@@ -882,6 +886,12 @@ nav.left-menu {
                       color: $success;
                     }
                 }
+            }
+        }
+        .panel-body-block {
+            position: static;
+            &.line-bottom {
+                border-bottom: 2px solid $gray-darken;
             }
         }
         .panel-body-block-relative {
