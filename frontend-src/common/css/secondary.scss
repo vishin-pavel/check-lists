@@ -14,8 +14,20 @@
   padding-right: 10px;
 }
 
-.info-title a:hover h4 {
-  color: #fb434a;
+.info-title a h4 {
+  opacity: 0.7;
+}
+
+.info-title .shadow:hover h4 {
+  opacity: 1.0;
+}
+
+.info-title a i {
+  opacity: 0.7;
+}
+
+.info-title .shadow:hover i {
+  opacity: 1.0;
 }
 
 .info-title a:hover p {
