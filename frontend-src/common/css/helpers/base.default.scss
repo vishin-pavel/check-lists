@@ -909,6 +909,22 @@ nav.left-menu {
                 right: 0;
             }
         }
+        .file {
+            padding-right: 10px;
+            &a, a{
+                color: $primary;
+                &:hover, &:active {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+            &i, i{
+                color: $default;
+            }
+            &:hover i, &:active i {
+                color: $danger;
+            }
+        }
     }
     .panel-footer {
         padding: 25px;

@@ -14,7 +14,7 @@ $.fn.editableTableWidget = function (options) {
 			active,
 			showEditor = function (select) {
 				active = element.find('td:focus');
-				if (active.length) {
+				if (active.length && !active.find('textarea').length && !active.find('input').length)  {
 					editor.val(active.text())
 						.removeClass('error')
 						.show()
