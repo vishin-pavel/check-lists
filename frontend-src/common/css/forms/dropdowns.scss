@@ -108,16 +108,18 @@
 }
 
 .dropdown {
-    //padding-left: 8px;
-    //padding-right: 8px;
-    //&:hover {
-    //    background: rgba($default, .5);
-    //}
     &.dropdown-avatar {
-        .dropdown-toggle {
+        .dropdown-toggle, .dropdown-not-toggle {
             display: inline-block;
             position: relative;
             padding-right: 18px;
+            &:hover {
+                &:after {
+                    color: $black-lighten-more;
+                }
+            }
+        }
+        .dropdown-toggle {
             &:after {
                 position: absolute;
                 right: 0px;
@@ -126,13 +128,12 @@
                 color: $black-lighten-more-more;
                 @include transition-middle();
             }
-            &:hover {
-                &:after {
-                    color: $black-lighten-more;
-                }
-            }
         }
     }
+    .dropdown-not-toggle {
+        border-bottom: 1px solid red;
+    }
+
     .dropdown-inline-button {
         display: inline-block;
         color: $black-lighten-more;

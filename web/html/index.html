@@ -104,60 +104,88 @@
     <script src="../assets/common/js/helper.js"></script>
 </head>
 <body class="theme-default">
-    <nav class="top-menu box-shadow">
+
+    <nav class="left-menu" left-menu style="height: 80px;">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/common/img/_logo.jpeg" alt="Проверочные листы" />
+                <img class="logo-inverse" src="../assets/common/img/logo-inverse.png" alt="Проверочные листы" />
+                <!--<span class="color-danger">Проверочные листы</span>-->
+                <!--<h6 class="color-info">государственного контроля (надзора), муниципального контроля и самопроверки ЮЛ и ИП.</h6>-->
+            </a>
+        </div>
+    </nav>
+
+    <nav class="top-menu">
         <div class="menu-icon-container hidden-md-up">
             <div class="animate-menu-button left-menu-toggle">
                 <div><!-- --></div>
             </div>
         </div>
         <div class="menu">
-            <div class="menu-language-block">
-                <div class="dropdown">
+            <div class="menu-user-block">
+                <div class="dropdown dropdown-avatar">
                     <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <span class="" href="javascript:void(0);"><i class="dropdown-icon icmn-flag"></i> Rus</span>
+                    <span class="avatar" href="javascript:void(0);">
+                        <img src="../assets/common/img/temp/avatars/1.jpg" alt="Alternative text to the image">
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Личный кабинет</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Выход</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-user-block menu-language">
+                <div class="dropdown dropdown-avatar">
+                    <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="menu-notification-icon icmn-flag5"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="" role="menu">
                         <!--<div class="dropdown-header">Active</div>-->
-                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>Russian</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>Русский</a>
                         <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>English</a>
                     </ul>
                 </div>
             </div>
-            <div class="menu-info-block hidden-sm-down">
+            <div class="menu-info-block">
                 <div class="left">
                     <div class="header-buttons">
-                        <div class="button">
-                            <a href="javascript: void(0);" class="">
-                                <span class="hidden-sm-down">Главная</span>
-                                <span class="caret"></span>
+                        <div class="dropdown">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-database"></i>
+                                <span class="hidden-lg-down">Главная</span>
                             </a>
-                        </div><!--
-                         --><div class="button">
-                        <a href="javascript: void(0);" class="">
-                            <span class="hidden-sm-down">Работа с листами</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div><!--
-                         --><div class="button">
-                        <a href="javascript: void(0);" class="" aria-expanded="false">
-                            <span class="hidden-sm-down">Всё о проверочных листах</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div><!--
-                         --><div class="button dropdown">
-                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            <span class="hidden-sm-down">Личный кабинет</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Профиль</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Выход</a>
-                        </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-database"></i>
+                                <span class="hidden-lg-down">Работа с листами</span>
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-database"></i>
+                                <span class="hidden-lg-down">Все о проверочных листах</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <div class="left hidden-md-down">
+                    <div class="example-top-menu-chart">
+                    </div>
+                </div>
+                <div class="right hidden-md-down margin-left-20">
+                    <div class="search-block">
+                        <div class="form-input-icon form-input-icon-right">
+                            <i class="icmn-search"></i>
+                            <input type="text" class="form-control form-control-sm form-control-rounded" placeholder="Поиск по сайту...">
+                            <button type="submit" class="search-block-submit "></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -169,7 +197,14 @@
             <section class="page-content-inner">
                 <div class="content-page">
 
-                    <!-- тут блоки с контентом -->
+                    <!-- тут блоки с контентом --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                 </div>
 
@@ -177,31 +212,31 @@
         </section>
     </div>
     <!-- Page Scripts -->
-    <script>
-        $(function(){
+    <!--<script>-->
+        <!--$(function(){-->
 
-            $('.select2').select2();
-            $('.select2-tags').select2({
-                tags: true,
-                tokenSeparators: [',', ' ']
-            });
+            <!--$('.select2').select2();-->
+            <!--$('.select2-tags').select2({-->
+                <!--tags: true,-->
+                <!--tokenSeparators: [',', ' ']-->
+            <!--});-->
 
-            $('.selectpicker').selectpicker();
+            <!--$('.selectpicker').selectpicker();-->
 
-        })
-    </script>
-    <!-- End Page Scripts-->
+        <!--})-->
+    <!--</script>-->
+    <!--&lt;!&ndash; End Page Scripts&ndash;&gt;-->
 
-    <div class="cwt__footer visible-footer">
-        <div class="cwt__footer__bottom">
-            <div class="row">
-                <div class="col-md-4">
-                    © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные листы"</a>
-                </div>
-                <div class="col-md-8"></div>
-            </div>
-        </div>
-    </div>
-    <div class="main-backdrop"><!-- --></div>
+    <!--<div class="cwt__footer visible-footer">-->
+        <!--<div class="cwt__footer__bottom">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-4">-->
+                    <!--© 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные листы"</a>-->
+                <!--</div>-->
+                <!--<div class="col-md-8"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="main-backdrop">&lt;!&ndash; &ndash;&gt;</div>-->
 </body>
 </html>

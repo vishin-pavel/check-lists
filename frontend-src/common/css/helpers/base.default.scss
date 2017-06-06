@@ -156,7 +156,7 @@ pre {
  */
 
 nav.top-menu {
-    height: 60px;
+    height: 80px;
     background: $white;
     border-bottom: 1px solid $gray-darken;
     z-index: 110;
@@ -175,16 +175,16 @@ nav.top-menu {
         background: $white;
     }
     & + .page-content {
-        margin-top: 0px;
+        margin-top: 80px;
     }
     .menu-icon-container {
         font-size: 27px;
         float: left;
-        margin: 12px 0px 0px 20px;
+        margin: 25px 0px 0px 20px;
     }
     .menu {
-        height: 60px;
-        padding: 0px 16px;
+        height: 80px;
+        padding: 21px 16px;
         a {
             display: block;
             height: 100%;
@@ -192,30 +192,12 @@ nav.top-menu {
             padding-left: 8px;
             padding-right: 8px;
         }
-        .button {
-            a {
-                &.button-toggle, &.dropdown-toggle {
-                    &:hover, &:focus {
-                        color: $black;
-                        border-bottom: 2px solid $danger;
-                    }
-                }
-            }
-            .dropdown-menu {
-                a:hover, a:focus {
-                    color: $blue;
-                    text-shadow: inherit;
-                    background: inherit;
-                    filter: inherit;
-                }
-            }
-        }
         .menu-user-block {
             float: right;
             & + .menu-user-block {
                 margin: 0px 10px 0px 20px;
             }
-            &.menu-notifications {
+            &.menu-notifications, &.menu-language {
                 .menu-notification-icon {
                     display: block;
                     width: 23px;
@@ -225,32 +207,32 @@ nav.top-menu {
                 }
             }
         }
-        .menu-language-block {
-            float: right;
-            & + .menu-user-block {
-                margin: 0px 10px 0px 20px;
-            }
-            .dropdown {
-                a:hover, a:focus {
-                    color: $info;
-                }
-            }
-            .dropdown-toggle {
-                height: 60px;
-                line-height: 60px;
-            }
-            .dropdown-menu {
-                min-width: 80px;
-            }
-        }
+        //.menu-language-block {
+        //    float: right;
+        //    & + .menu-user-block {
+        //        margin: 0px 10px 0px 20px;
+        //    }
+        //    .dropdown {
+        //        a:hover, a:focus {
+        //            color: $info;
+        //        }
+        //    }
+        //    .dropdown-toggle {
+        //        height: 60px;
+        //        line-height: 60px;
+        //    }
+        //    .dropdown-menu {
+        //        min-width: 80px;
+        //    }
+        //}
         .menu-info-block {
-            margin-left: 35%;
-            //margin-right: 60px;
+            //margin-left: 35%;
+            margin-right: 80px;
             .left {
                 float: left;
                 .header-buttons {
-                    height: 60px;
-                    //margin-top: 9px;
+                    //height: 60px;
+                    margin-top: 9px;
                     @media (max-width: $xs-max-width) {
                         .dropdown-inline-button {
                             padding-right: 0px;
@@ -267,8 +249,8 @@ nav.top-menu {
                 float: right;
             }
         }
-        @media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
-        @media (max-width: $md-max-width) { .menu-info-block { margin-left: 6%; } }
+        //@media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
+        //@media (max-width: $md-max-width) { .menu-info-block { margin-left: 6%; } }
 
         .search-block {
             @include transition-slow();
