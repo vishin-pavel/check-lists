@@ -191,18 +191,20 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="" placeholder="Search..."
                                                    id="l">
-                                            <span class="input-group-btn">
-                                                    <a href="javascript: void(0);" class="btn btn-success">
-                                                        <i class="icmn-search"></i>
-                                                    </a>
-                                                </span>
+                                            <span class="input-group-btn padding-left-10">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    <i class="icmn-search"></i>
+                                                </a>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-md-push-1 text-center">
                                     <h4>
-                                        <i class="icmn-search color-white"></i>
-                                        <a href="#"><span class="color-white">Расширенный поиск листов</span></a>
+                                        <a href="#" class="dot">
+                                            <i class="icmn-search color-white"></i>
+                                            <span class="color-white">Расширенный поиск листов</span>
+                                        </a>
                                     </h4>
                                 </div>
                             </div>
@@ -212,9 +214,10 @@
                         <div class="col-md-4 info-title">
                             <section class="panel text-center">
                                 <div class="panel-heading">
-                                    <a href="#">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
                                         <div class="shadow">
-                                            <i class="icmn-question font-size-70 color-secondary"></i>
+                                            <i class="icmn-question font-size-70"></i>
                                             <h4 class="margin-top-20 color-danger">УЗНАТЬ</h4>
                                         </div>
                                     </a>
@@ -223,7 +226,8 @@
                                     <a href="#" data-toggle="modal" data-target="#example1">
                                         <p class="font-size-20">Получите свежую подробную информацию о приминении
                                             проверочных
-                                            листов</p>
+                                            листов
+                                        </p>
                                     </a>
                                 </div>
                             </section>
@@ -231,9 +235,10 @@
                         <div class="col-md-4 info-title">
                             <section class="panel text-center">
                                 <div class="panel-heading">
-                                    <a href="#">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
                                         <div class="shadow">
-                                            <i class="icmn-lamp4 font-size-70 color-secondary"></i>
+                                            <i class="icmn-lamp4 font-size-70"></i>
                                             <h4 class="margin-top-20 color-danger">ИЗУЧИТЬ</h4>
                                         </div>
                                     </a>
@@ -241,7 +246,8 @@
                                 <div class="panel-body">
                                     <a href="#" data-toggle="modal" data-target="#example2">
                                         <p class="font-size-20">Научитель эффективно применять проверочные
-                                            листы</p>
+                                            листы
+                                        </p>
                                     </a>
                                 </div>
                             </section>
@@ -249,9 +255,10 @@
                         <div class="col-md-4 info-title">
                             <section class="panel text-center">
                                 <div class="panel-heading">
-                                    <a href="#">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
                                         <div class="shadow">
-                                            <i class="icmn-checkbox-checked font-size-70 color-secondary"></i>
+                                            <i class="icmn-checkbox-checked font-size-70"></i>
                                             <h4 class="margin-top-20 color-danger">ПРИМЕНИТЬ</h4>
                                         </div>
                                     </a>
@@ -270,11 +277,15 @@
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
-                                           data-target="#home1" role="tab" aria-expanded="true">Предпринимателям</a>
+                                           data-target="#home1" role="tab" aria-expanded="true">
+                                            Предпринимателям
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="javascript: void(0);" data-toggle="tab"
-                                           data-target="#profile1" role="tab" aria-expanded="false">Госслужащим</a>
+                                           data-target="#profile1" role="tab" aria-expanded="false">
+                                            Госслужащим
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="tab-content padding-vertical-20">
@@ -355,6 +366,16 @@
         $('.selectpicker').selectpicker();
 
     });
+    $(function () {
+
+        $("[data-toggle=popover]").popover();
+        $("[data-toggle=popover-hover]").popover({
+            trigger: 'hover'
+        });
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
 </script>
 <!-- End Page Scripts-->
 
@@ -380,7 +401,7 @@
                 </button>
                 <div class="row">
                     <div class="col-md-2">
-                        <i class="icmn-question font-size-80 color-secondary"></i>
+                        <i class="icmn-question font-size-80"></i>
                     </div>
                     <div class="col-md-9">
                         <h2 class="modal-title color-danger" id="myModalLabel">Проверочный лист</h2>
@@ -437,7 +458,7 @@
                 </button>
                 <div class="row">
                     <div class="col-md-2">
-                        <i class="icmn-lamp4 font-size-80 color-secondary"></i>
+                        <i class="icmn-lamp4 font-size-80"></i>
                     </div>
                     <div class="col-md-9">
                         <h2 class="modal-title color-danger" id="myModalLabel">Изучить</h2>
@@ -501,7 +522,7 @@
                 </button>
                 <div class="row">
                     <div class="col-md-2">
-                        <i class="icmn-checkbox-checked font-size-80 color-secondary"></i>
+                        <i class="icmn-checkbox-checked font-size-80"></i>
                     </div>
                     <div class="col-md-9">
                         <h2 class="modal-title color-danger" id="myModalLabel">Применить</h2>
