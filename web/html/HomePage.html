@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Главная страница</title>
 
+    <link href="../assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="../assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="../assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="../assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="../assets/common/img/favicon.png" rel="icon" type="image/png">
+    <link href="../../frontend-src/vendors/bower/datatables/media/images/favicon.ico" rel="shortcut icon">
 
+    <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Vendors Styles -->
+    <!-- v1.0.0 -->
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/vendors/jscrollpane/style/jquery.jscrollpane.css">
     <link rel="stylesheet" type="text/css" href="../assets/vendors/ladda/dist/ladda-themeless.min.css">
@@ -30,11 +45,12 @@
     <!-- v1.7.0 -->
     <link rel="stylesheet" type="text/css" href="../assets/vendors/dropify/dist/css/dropify.min.css">
 
+    <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="../assets/common/css/main.css">
     <link rel="stylesheet" href="../assets/common/css/helpers/fonts.css">
-    <link rel="stylesheet" type="text/css" href="../assets/common/css/Secondary.css">
 
-
+    <!-- Vendors Scripts -->
+    <!-- v1.0.0 -->
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="../assets/vendors/tether/dist/js/tether.min.js"></script>
     <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -87,154 +103,461 @@
     <script src="../assets/common/js/common.js"></script>
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
-    <title>Home Page</title>
 </head>
-<body>
-<div class="header-page margin-bottom-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <h1>
-                    <span class="color-danger">Проверочные листы</span>
-                    <h6 class="color-info">
-                        государственного контроля (надзора), муниципального контроля и самопроверки ЮЛ и ИП.
-                    </h6>
-                </h1>
+<body class="theme-default">
+<nav class="top-menu box-shadow">
+    <div class="menu-icon-container hidden-md-up">
+        <div class="animate-menu-button left-menu-toggle">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-language-block">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="" href="javascript:void(0);"><i class="dropdown-icon icmn-flag"></i> Rus</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                    <!--<div class="dropdown-header">Active</div>-->
+                    <a class="dropdown-item" href="javascript:void(0)"><i
+                            class="dropdown-icon icmn-flag"></i>Russian</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i
+                            class="dropdown-icon icmn-flag"></i>English</a>
+                </ul>
             </div>
-            <div class="col-md-3">
-                <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов, утвержденных
-                    постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177
-                </small>
+        </div>
+        <div class="menu-info-block hidden-sm-down">
+            <div class="left">
+                <div class="header-buttons">
+                    <div class="button">
+                        <a href="javascript: void(0);" class="">
+                            <span class="hidden-sm-down">Главная</span>
+                            <span class="caret"></span>
+                        </a>
+                    </div><!--
+                             -->
+                    <div class="button">
+                        <a href="javascript: void(0);" class="">
+                            <span class="hidden-sm-down">Работа с листами</span>
+                            <span class="caret"></span>
+                        </a>
+                    </div><!--
+                             -->
+                    <div class="button">
+                        <a href="javascript: void(0);" class="" aria-expanded="false">
+                            <span class="hidden-sm-down">Всё о проверочных листах</span>
+                            <span class="caret"></span>
+                        </a>
+                    </div><!--
+                             -->
+                    <div class="button dropdown">
+                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <span class="hidden-sm-down">Личный кабинет</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i>
+                                Профиль</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
+                            <a class="dropdown-item" href="javascript:void(0)"><i
+                                    class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>
+                                Выход</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <section class="page-content">
+        <div class="page-content-inner">
+            <div class="content-page">
+                <div class="container">
+                    <div class="panel background-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <label class="form-control-label" for="l"><h5 class="color-white">Поиск</h5></label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="search-block">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="" placeholder="Search..."
+                                                   id="l">
+                                            <span class="input-group-btn padding-left-10">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    <i class="icmn-search"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-push-1 text-center">
+                                    <h4>
+                                        <a href="#" class="dot">
+                                            <i class="icmn-search color-white"></i>
+                                            <span class="color-white">Расширенный поиск листов</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-top-50">
+                        <div class="col-md-4 info-title">
+                            <section class="panel text-center">
+                                <div class="panel-heading">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
+                                        <div class="shadow">
+                                            <i class="icmn-question font-size-70"></i>
+                                            <h4 class="margin-top-20 color-danger">УЗНАТЬ</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <a href="#" data-toggle="modal" data-target="#example1">
+                                        <p class="font-size-20">Получите свежую подробную информацию о приминении
+                                            проверочных
+                                            листов
+                                        </p>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-4 info-title">
+                            <section class="panel text-center">
+                                <div class="panel-heading">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
+                                        <div class="shadow">
+                                            <i class="icmn-lamp4 font-size-70"></i>
+                                            <h4 class="margin-top-20 color-danger">ИЗУЧИТЬ</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <a href="#" data-toggle="modal" data-target="#example2">
+                                        <p class="font-size-20">Научитель эффективно применять проверочные
+                                            листы
+                                        </p>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-4 info-title">
+                            <section class="panel text-center">
+                                <div class="panel-heading">
+                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                       title="Перейти к списку проектов">
+                                        <div class="shadow">
+                                            <i class="icmn-checkbox-checked font-size-70"></i>
+                                            <h4 class="margin-top-20 color-danger">ПРИМЕНИТЬ</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="panel-body">
+                                    <a href="#" data-toggle="modal" data-target="#example3">
+                                        <p class="font-size-20">Проведите проверку в электронном сервисе</p>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row faq">
+                        <div class="col-md-4">
+                            <div class="nav-tabs-horizontal">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
+                                           data-target="#home1" role="tab" aria-expanded="true">
+                                            Предпринимателям
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript: void(0);" data-toggle="tab"
+                                           data-target="#profile1" role="tab" aria-expanded="false">
+                                            Госслужащим
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content padding-vertical-20">
+                                    <div class="tab-pane active" id="home1" role="tabpanel" aria-expanded="true">
+                                        <a href="#">Я новый пользователь. С чего начать?</a><br>
+                                        <a href="#">Новое о проверочных листах</a>
+                                    </div>
+                                    <div class="tab-pane" id="profile1" role="tabpanel" aria-expanded="false">
+                                        <a href="#">Я новый пользователь. С чего начать?</a><br>
+                                        <a href="#">Новое о проверочных листах</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="widget widget-seven capabilities">
+                                        <div class="widget-body">
+                                            <div href="javascript: void(0);" class="widget-body-inner">
+                                                <p class="font-size-16">Проверочных листов размещено на портале</p>
+                                                <i class="counter-icon icmn-book color-black"></i>
+                                                <span class="counter-count color-black">
+                                                    <span class="counter-init" data-from="0" data-to="67">375</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget widget-seven capabilities">
+                                        <div class="widget-body">
+                                            <div href="javascript: void(0);" class="widget-body-inner">
+                                                <p class="font-size-16">Выполнено проверок с использованием
+                                                    листов</p>
+                                                <i class="counter-icon icmn-users color-black"></i>
+                                                <span class="counter-count color-black">
+                                                    <span class="counter-init" data-from="0" data-to="67">12675</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <section class="panel">
+                                        <div class="panel-heading">
+                                            <h5 class="color-success">Недавно размещены</h5>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Проверка соблюдения требования по обеспечению требований пожарной
+                                                безопасности</p>
+                                            <span class="color-success">Разработчик: <code>Минобрнауки России</code></span><br>
+                                            <span class="color-success">Дата размещения: <code>4 мая 2017 г.</code></span><br>
+                                            <span class="color-success">Вид: <code>Проект ведомственного акта</code></span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Page Scripts -->
+<script>
+    $(function () {
+
+        $('.select2').select2();
+        $('.select2-tags').select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        });
+
+        $('.selectpicker').selectpicker();
+
+    });
+    $(function () {
+
+        $("[data-toggle=popover]").popover();
+        $("[data-toggle=popover-hover]").popover({
+            trigger: 'hover'
+        });
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+</script>
+<!-- End Page Scripts-->
+
+<div class="cwt__footer visible-footer">
+    <div class="cwt__footer__bottom">
+        <div class="row">
+            <div class="col-md-4">
+                © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные
+                листы"</a>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </div>
+</div>
+<div class="main-backdrop"><!-- --></div>
+<div class="modal fade modal-size-large" id="example1" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="icmn-question font-size-80"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="modal-title color-danger" id="myModalLabel">Проверочный лист</h2>
+                        <p>Получите свежую подробную информацию о приминении проверочных листов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Проверочный лист – документ, который используется контролирующими органами для проверки деятельности
+                    предпринимателей. В проверочный лист включаются требования, содержащиеся в законодательстве, чтобы
+                    сосредоточить внимание на ключевых требованиях, несоблюдение которых влечет угрозу жизни и здоровью
+                    человека, окружающей среде. Таким образом, проверочные листы создаются с фокусом на риски, избегая
+                    перечисления в них всех возможных обязательных требований при оценке того или иного предприятия.
+
+                    Проверочный лист создается в форме перечня вопросов, формулировка которых предельно проста и
+                    исключает различное толкование, что обеспечивает прозрачность процесса.
+
+                    Проверочный лист:
+
+                    - позволяет предпринимателю точно знать требования, которым он должен соответствовать и быть
+                    уверенным, что предъявление к нему дополнительных требований невозможно;
+
+                    - информирует предпринимателя о требованиях действующего законодательства;
+
+                    - помогает предпринимателю проводить самопроверку, направляя его внимание на самые важные вопросы
+                    безопасности;
+
+                    - исключает различное толкование требований законодательства со стороны инспекторов;
+
+                    - унифицирует работу всех инспекторов, сводя к минимуму субъективные факторы в работе;
+
+                    - упрощает и ускоряет работу инспекторов (государственных контролирующих органов).
+
+                    Каждый государственный контролирующий орган в подконтрольной ему сфере формирует проверочные листы.
+                    Компании, отвечающие схожим характеристикам (в зависимости от сферы деятельности) образуют одну
+                    группу, для которой разрабатывается отдельный проверочный лист. Таких групп в каждой сфере может
+                    быть несколько. Проверочный лист утверждаются совместным приказом Министерства экономики и
+                    антимонопольной политики Кыргызстана и соответствующим государственным органом.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
 </div>
-<div class="content-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <label class="form-control-label" for="l8"><h4>Поиск</h4></label>
-            </div>
-            <div class="col-md-6">
-                <div class="search-block">
-                    <div class="form-input-icon form-input-icon-right">
-                        <i class="icmn-search"></i>
-                        <input type="text" class="form-control form-control-sm"
-                               placeholder="Искать проверочный лист...">
-                        <button type="submit" class="search-block-submit "></button>
+<div class="modal fade modal-size-large" id="example2" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-2">
+                        <i class="icmn-lamp4 font-size-80"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="modal-title color-danger" id="myModalLabel">Изучить</h2>
+                        <p>Научитель эффективно применять проверочные листы</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-push-1 text-center">
-                <h4>
-                    <i class="icmn-search"></i>
-                    <a href="#"><span>Расширенный поиск листов</span></a>
-                </h4>
+            <div class="modal-body">
+                <p> Вступили в силу внесенные в Федеральный закон «О защите прав юридических лиц и индивидуальных
+                    предпринимателей при осуществлении государственного контроля (надзора) и муниципального контроля»
+                    изменения, касающиеся применения в ходе плановых проверок проверочных листов (списков контрольных
+                    вопросов).
+
+                    В силу частей 11.1-11.5 статьи 9 Федерального закона № 294-ФЗ положением о виде федерального
+                    государственного контроля (надзора), порядком организации и проведения отдельных видов контроля
+                    (надзора) может быть предусмотрена обязанность использования при проведении плановой проверки
+                    должностным лицом контролирующего органа проверочных листов (списков контрольных вопросов).
+
+                    Обязанность использования проверочных листов может быть предусмотрена при проведении плановых
+                    проверок всех или отдельных юридических лиц, индивидуальных предпринимателей, обусловлена типом
+                    (отдельными характеристиками) используемых ими производственных объектов, отнесением деятельности
+                    юридического лица, индивидуального предпринимателя и (или) используемых ими производственных
+                    объектов к определенной категории риска, определенному классу (категории) опасности.
+
+                    Проверочные листы разрабатываются и утверждаются органом государственного контроля (надзора),
+                    органом муниципального контроля в соответствии с общими требованиями, определяемыми Правительством
+                    Российской Федерации, и включают в себя перечни вопросов, ответы на которые однозначно
+                    свидетельствуют о соблюдении или несоблюдении юридическим лицом, индивидуальным предпринимателем
+                    обязательных требований, составляющих предмет проверки.
+
+                    В соответствии с положением о виде контроля (надзора) перечень может содержать вопросы,
+                    затрагивающие все предъявляемые к юридическому лицу, индивидуальному предпринимателю обязательные
+                    требования, либо ограничить предмет плановой проверки только частью обязательных требований,
+                    соблюдение которых является наиболее значимым.
+
+                    При проведении совместных плановых проверок могут применяться сводные проверочные листы,
+                    разрабатываемые и утверждаемые несколькими контролирующими органами.
+
+                    При проведении проверки с использованием проверочного листа (списка контрольных вопросов)
+                    заполненный по результатам проведения проверки проверочный лист (список контрольных вопросов)
+                    прикладывается к акту проверки.
+
+                    Данные изменения вступили в силу 01.01.2017 года.
+
+                    И.о. прокурора Суворовского района П.Н. Боткин</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-        <div class="row margin-top-50">
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-question font-size-70"></i>
-                    <h2>УЗНАТЬ</h2>
-                    <p class="text-left font-size-20">Получите свежую подробную информацию о приминении проверочных
-                        листов</p>
-                </div>
-            </div>
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-lamp4 font-size-70"></i>
-                    <h2>ИЗУЧИТЬ</h2>
-                    <p class="text-left font-size-20">Научитель эффективно применять проверочные листы</p>
-                </div>
-            </div>
-            <div class="col-md-4 info-title">
-                <div class="margin-bottom-50 text-center capabilities">
-                    <i class="icmn-checkbox-checked font-size-70"></i>
-                    <h2>ПРИМЕНИТЬ</h2>
-                    <p class="text-left font-size-20">Проведите проверку в электронном сервисе</p>
-                </div>
-            </div>
-        </div>
-        <div class="row faq">
-            <div class="col-md-4">
-                <div class="nav-tabs-horizontal">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="javascript: void(0);" data-toggle="tab"
-                               data-target="#home1" role="tab" aria-expanded="true">Предпринимателям</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript: void(0);" data-toggle="tab" data-target="#profile1"
-                               role="tab" aria-expanded="false">Госслужащим</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content padding-vertical-20">
-                        <div class="tab-pane active" id="home1" role="tabpanel" aria-expanded="true">
-                            <a href="#">Я новый пользователь. С чего начать?</a><br>
-                            <a href="#">Новое о проверочных листах</a>
-                        </div>
-                        <div class="tab-pane" id="profile1" role="tabpanel" aria-expanded="false">
-
-                            Mel, incorruptis confidam derepta inportuno perpetuam placatae. Expetenda summam
-                            venandi cotidie euripidis vexetur, scribendi recta fortunam
-                            hanc oblivione. Iniuria ipso statuam utrumque asperiores
-                            eae cogitemus, evertitur triarium perspexit conclusionemque
-                            propterea repellendus agatur scilicet, leniter intervalla
-                            nocet praeterierunt tuum privatione, senserit sale vias,
-                            delectatum dedecora ratione o religionis derigatur diuturnum
-                            arbitrantur conspiratione, legam opera splendore iste democritum
-                            apte romanum legum egregios.
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
+    </div>
+</div>
+<div class="modal fade modal-size-large" id="example3" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="widget widget-seven">
-                            <div class="widget-body">
-                                <div href="javascript: void(0);" class="widget-body-inner">
-                                    <p class="font-size-16">Проверочных листов размещено на портале</p>
-                                    <i class="counter-icon icmn-book"></i>
-                                    <span class="counter-count">
-                                <span class="counter-init" data-from="0" data-to="67">375</span>
-                            </span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-2">
+                        <i class="icmn-checkbox-checked font-size-80"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="modal-title color-danger" id="myModalLabel">Применить</h2>
+                        <p>Проведите проверку в электронном сервисе</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Положением о виде федерального госконтроля (надзора), порядком организации и проведения отдельных
+                    видов государственного, муниципального контроля (надзора) может быть предусмотрена обязанность
+                    использования при проведении плановой проверки проверочных листов (списков контрольных вопросов).
 
-                    </div>
-                    <div class="col-md-6">
-                        <div class="widget widget-seven">
-                            <div class="widget-body">
-                                <div href="javascript: void(0);" class="widget-body-inner">
-                                    <p class="font-size-16">Выполнено проверок с использованием листов</p>
-                                    <i class="counter-icon icmn-users"></i>
-                                    <span class="counter-count">
-                                <span class="counter-init" data-from="0" data-to="67">12675</span>
-                            </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <section class="panel">
-                            <div class="panel-heading">
-                                <h5>Недавно размещены</h5>
-                            </div>
-                            <div class="panel-body">
-                                <p>Проверка соблюдения требования по обеспечению требований пожарной безопасности</p>
-                                <span>Разработчик: <code>Минобрнауки России</code></span><br>
-                                <span>Дата размещения: <code>4 мая 2017 г.</code></span><br>
-                                <span>Вид: <code>Проект ведомственного акта</code></span>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+                    Планируется установить следующие общие требования к разработке и утверждению таких листов.
+
+                    Так, форма проверочного листа будет утверждаться приказом руководителя федерального органа
+                    исполнительной власти, органа исполнительной власти субъекта Федерации,
+                    исполнительно-распорядительного органа местного самоуправления.
+
+                    До утверждения она подлежит обязательному предварительному обсуждению на заседаниях общественных
+                    советов (при их наличии), создаваемых при органах государственного, муниципального контроля
+                    (надзора).
+
+                    В целях проведения совместных плановых проверок могут применяться сводные проверочные листы,
+                    разрабатываемые и утверждаемые руководителями нескольких органов государственного, муниципального
+                    контроля (надзора).
+
+                    Утвержденные проверочные листы будут публиковаться на официальных сайтах органа государственного,
+                    муниципального контроля (надзора).
+
+
+                    ГАРАНТ.РУ: http://www.garant.ru/products/ipo/prime/doc/56586417/#ixzz4jEFRjFs2</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

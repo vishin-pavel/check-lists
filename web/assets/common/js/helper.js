@@ -12,7 +12,7 @@ function setEqualHeight(columns) {
     columns.height(tallestcolumn);
 }
 $(document).ready(function () {
-    setEqualHeight($(".info-title > div"));
+    setEqualHeight($(".info-title > section"));
 });
 
 

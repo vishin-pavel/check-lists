@@ -264,7 +264,6 @@ nav.top-menu {
                 .form-control {
                     width: 100%;
                 }
-
             }
         }
     }
@@ -816,6 +815,7 @@ nav.left-menu {
     }
     .panel-heading {
         padding: 25px;
+        border-radius: 5px 5px 0 0;
         & + .panel-body {
             padding-top: 0px;
         }
