@@ -8,7 +8,7 @@
     nav.top-menu {
         left: 0px !important;
         .menu {
-            padding: 0px 15px;
+            padding: 21px 15px; //0px 15px;
         }
         .menu-icon-container {
             & + .menu {
@@ -162,6 +162,11 @@
 }
 
 
+@media (max-width: $s-max-width) {
+    .hidden-s-down {
+        display: none !important;
+    }
+}
 /*
  * NEW PADDINGS & MARGINS
  */

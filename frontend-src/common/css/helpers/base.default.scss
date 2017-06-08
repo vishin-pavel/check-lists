@@ -259,11 +259,12 @@ nav.top-menu {
                 min-width: 200px;
             }
             &:hover {
-                width: 300px;
+                width: 200px; //300px;
                 @include transition-slow();
                 .form-control {
                     width: 100%;
                 }
+
             }
         }
     }
@@ -2067,9 +2068,9 @@ body {
 .cwt {
     &__footer {
         nav.left-menu + * + * + & {
-            margin-left: 256px;
+            margin-left: 0; //256px;
             @media (max-width: $sm-max-width) {
-                margin-left: 16px;
+                margin-left: 0; //16px;
             }
             body.mode-superclean & {
                 margin-left: 240px;
