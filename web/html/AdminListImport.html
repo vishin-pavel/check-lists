@@ -104,144 +104,162 @@
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
 </head>
-<body class="theme-default">
-<nav class="top-menu box-shadow">
-    <div class="menu-icon-container hidden-md-up">
-        <div class="animate-menu-button left-menu-toggle">
-            <div><!-- --></div>
+<body class="theme-default menu-fixed">
+
+    <nav class="left-menu" left-menu style="height: 80px;">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/common/img/_logo.jpeg" alt="Проверочные листы" width="100%"/>
+                <!--<img class="logo-inverse" src="../assets/common/img/logo-inverse.png" alt="Проверочные листы" />-->
+            </a>
         </div>
-    </div>
-    <div class="menu">
-        <div class="menu-language-block">
-            <div class="dropdown">
-                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <span class="" href="javascript:void(0);"><i class="dropdown-icon icmn-flag"></i> Rus</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                    <!--<div class="dropdown-header">Active</div>-->
-                    <a class="dropdown-item" href="javascript:void(0)"><i
-                            class="dropdown-icon icmn-flag"></i>Russian</a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i
-                            class="dropdown-icon icmn-flag"></i>English</a>
-                </ul>
+    </nav>
+    <nav class="top-menu">
+        <div class="menu-icon-container hidden-md-up">
+            <div class="animate-menu-button left-menu-toggle">
+                <div><!-- --></div>
             </div>
         </div>
-        <div class="menu-info-block hidden-sm-down">
-            <div class="left">
-                <div class="header-buttons">
-                    <div class="button">
-                        <a href="javascript: void(0);" class="">
-                            <span class="hidden-sm-down">Главная</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div><!--
-                             -->
-                    <div class="button">
-                        <a href="javascript: void(0);" class="">
-                            <span class="hidden-sm-down">Работа с листами</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div><!--
-                             -->
-                    <div class="button">
-                        <a href="javascript: void(0);" class="" aria-expanded="false">
-                            <span class="hidden-sm-down">Всё о проверочных листах</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div><!--
-                             -->
-                    <div class="button dropdown">
-                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="false">
-                            <span class="hidden-sm-down">Личный кабинет</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i>
-                                Профиль</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>
-                                Выход</a>
-                        </ul>
+        <div class="menu">
+            <div class="menu-user-block">
+                <div class="dropdown dropdown-avatar">
+                    <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="avatar" href="javascript:void(0);">
+                            <img src="../assets/common/img/temp/avatars/1.jpg" alt="Alternative text to the image">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Личный кабинет</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Выход</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-user-block menu-language">
+                <div class="dropdown dropdown-avatar">
+                    <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="menu-notification-icon icmn-flag5"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                        <!--<div class="dropdown-header">Active</div>-->
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>Русский</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>English</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-info-block">
+                <div class="left">
+                    <div class="header-buttons hidden-sm-down">
+                        <div class="dropdown">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-home"></i>
+                                <span class="hidden-md-down">Главная</span>
+                            </a>
+                        </div>
+                        <div class="dropdown hidden-sm-down">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-list"></i>
+                                <span class="hidden-md-down">Работа с листами</span>
+                            </a>
+                        </div>
+                        <div class="dropdown hidden-sm-down">
+                            <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="dropdown-inline-button-icon icmn-info2"></i>
+                                <span class="hidden-lg-down">Все о проверочных листах</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="left hidden-md-down">
+                    <div class="example-top-menu-chart">
+                    </div>
+                </div>
+                <div class="right hidden-s-down margin-left-20">
+                    <div class="search-block">
+                        <div class="form-input-icon form-input-icon-right">
+                            <i class="icmn-search"></i>
+                            <input type="text" class="form-control form-control-sm form-control-rounded" placeholder="Поиск по сайту...">
+                            <button type="submit" class="search-block-submit "></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container">
-    <section class="page-content margin-top-50">
-        <div class="page-content-inner">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel">
-                        <div class="panel-heading background-default">
-                            <h5 class="color-white">Импорт нового листа</h5>
-                        </div>
-                        <div class="panel-body margin-top-20">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <select class="form-control" id="l">
-                                        <option value="Option 1">Выбрать файл для загрузки</option>
-                                        <option value="Option 2">Файл 1</option>
-                                        <option value="Option 3">Файл 2</option>
-                                        <option value="Option 4">Файл 3</option>
-                                        <option value="Option 5">Файл 4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-md-push-1">
-                                    <label for="l" class="font-size-16">Файл не выбран</label>
+    <div class="container margin-top-80">
+        <section class="page-content">
+            <div class="page-content-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-heading background-default">
+                                <h5 class="color-white">Импорт нового листа</h5>
+                            </div>
+                            <div class="panel-body margin-top-20">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <select class="form-control" id="l">
+                                            <option value="Option 1">Выбрать файл для загрузки</option>
+                                            <option value="Option 2">Файл 1</option>
+                                            <option value="Option 3">Файл 2</option>
+                                            <option value="Option 4">Файл 3</option>
+                                            <option value="Option 5">Файл 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-md-push-1">
+                                        <label for="l" class="font-size-16">Файл не выбран</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row margin-top-20">
+                    <div class="col-md-2 col-md-push-4">
+                        <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
+                            <i class="icmn-download" aria-hidden="true"></i>
+                            Импортировать
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="row margin-top-20">
-                <div class="col-md-2 col-md-push-4">
-                    <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
-                        <i class="icmn-download" aria-hidden="true"></i>
-                        Импортировать
-                    </button>
+        </section>
+    </div>
+    <!-- Page Scripts -->
+    <script>
+        $(function () {
+
+            $('.select2').select2();
+            $('.select2-tags').select2({
+                tags: true,
+                tokenSeparators: [',', ' ']
+            });
+
+            $('.selectpicker').selectpicker();
+
+        });
+
+    </script>
+    <!-- End Page Scripts-->
+
+    <div class="cwt__footer visible-footer">
+        <div class="cwt__footer__bottom">
+            <div class="row">
+                <div class="col-lg-4">
+                    © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные листы"</a>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-5">
+                    <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов, утвержденных постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177</small>
                 </div>
             </div>
         </div>
-    </section>
-</div>
-<!-- Page Scripts -->
-<script>
-    $(function () {
-
-        $('.select2').select2();
-        $('.select2-tags').select2({
-            tags: true,
-            tokenSeparators: [',', ' ']
-        });
-
-        $('.selectpicker').selectpicker();
-
-    });
-
-</script>
-<!-- End Page Scripts-->
-
-<div class="cwt__footer visible-footer">
-    <div class="cwt__footer__bottom">
-        <div class="row">
-            <div class="col-md-4">
-                © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные
-                листы"</a>
-            </div>
-            <div class="col-md-8"></div>
-        </div>
     </div>
-</div>
-<div class="main-backdrop"><!-- --></div>
+    <div class="main-backdrop"><!-- --></div>
+
 </body>
 </html>

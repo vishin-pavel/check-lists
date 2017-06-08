@@ -104,70 +104,85 @@
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
 </head>
-<body class="theme-default">
-<nav class="top-menu box-shadow">
+<body class="theme-default menu-fixed">
+
+    <nav class="left-menu" left-menu style="height: 80px;">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/common/img/_logo.jpeg" alt="Проверочные листы" width="100%"/>
+                <!--<img class="logo-inverse" src="../assets/common/img/logo-inverse.png" alt="Проверочные листы" />-->
+            </a>
+        </div>
+    </nav>
+    <nav class="top-menu">
     <div class="menu-icon-container hidden-md-up">
         <div class="animate-menu-button left-menu-toggle">
             <div><!-- --></div>
         </div>
     </div>
     <div class="menu">
-        <div class="menu-language-block">
-            <div class="dropdown">
+        <div class="menu-user-block">
+            <div class="dropdown dropdown-avatar">
                 <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <span class="" href="javascript:void(0);"><i class="dropdown-icon icmn-flag"></i> Rus</span>
+                    <span class="avatar" href="javascript:void(0);">
+                        <img src="../assets/common/img/temp/avatars/1.jpg" alt="Alternative text to the image">
+                    </span>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="" role="menu">
-                    <!--<div class="dropdown-header">Active</div>-->
-                    <a class="dropdown-item" href="javascript:void(0)"><i
-                            class="dropdown-icon icmn-flag"></i>Russian</a>
-                    <a class="dropdown-item" href="javascript:void(0)"><i
-                            class="dropdown-icon icmn-flag"></i>English</a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Личный кабинет</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Выход</a>
                 </ul>
             </div>
         </div>
-        <div class="menu-info-block hidden-sm-down">
+        <div class="menu-user-block menu-language">
+            <div class="dropdown dropdown-avatar">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="menu-notification-icon icmn-flag5"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="" role="menu">
+                    <!--<div class="dropdown-header">Active</div>-->
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>Русский</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-flag"></i>English</a>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-info-block">
             <div class="left">
-                <div class="header-buttons">
-                    <div class="button">
-                        <a href="javascript: void(0);" class="">
-                            <span class="hidden-sm-down">Главная</span>
-                            <span class="caret"></span>
+                <div class="header-buttons hidden-sm-down">
+                    <div class="dropdown">
+                        <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="dropdown-inline-button-icon icmn-home"></i>
+                            <span class="hidden-md-down">Главная</span>
                         </a>
-                    </div><!--
-                             -->
-                    <div class="button">
-                        <a href="javascript: void(0);" class="">
-                            <span class="hidden-sm-down">Работа с листами</span>
-                            <span class="caret"></span>
+                    </div>
+                    <div class="dropdown hidden-sm-down">
+                        <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="dropdown-inline-button-icon icmn-list"></i>
+                            <span class="hidden-md-down">Работа с листами</span>
                         </a>
-                    </div><!--
-                             -->
-                    <div class="button">
-                        <a href="javascript: void(0);" class="" aria-expanded="false">
-                            <span class="hidden-sm-down">Всё о проверочных листах</span>
-                            <span class="caret"></span>
+                    </div>
+                    <div class="dropdown hidden-sm-down">
+                        <a href="javascript: void(0);" class="dropdown-not-toggle dropdown-inline-button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="dropdown-inline-button-icon icmn-info2"></i>
+                            <span class="hidden-lg-down">Все о проверочных листах</span>
                         </a>
-                    </div><!--
-                             -->
-                    <div class="button dropdown">
-                        <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown"
-                           aria-expanded="false">
-                            <span class="hidden-sm-down">Личный кабинет</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i>
-                                Профиль</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>
-                                Выход</a>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="left hidden-md-down">
+                <div class="example-top-menu-chart">
+                </div>
+            </div>
+            <div class="right hidden-s-down margin-left-20">
+                <div class="search-block">
+                    <div class="form-input-icon form-input-icon-right">
+                        <i class="icmn-search"></i>
+                        <input type="text" class="form-control form-control-sm form-control-rounded" placeholder="Поиск по сайту...">
+                        <button type="submit" class="search-block-submit "></button>
                     </div>
                 </div>
             </div>
@@ -175,382 +190,384 @@
     </div>
 </nav>
 
-<div class="container">
-    <section class="page-content margin-top-50">
-        <h2 class="text-center color-danger">Чек-лист проверки соблюдения требований по обеспечению траспортной
-            безопасности, учитывающие уровни безопасности для различных категорий объектов транспортной инфраструктуры и
-            траспортных средств воздушного транспорта.</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel">
-                    <div class="panel-heading background-default">
-                        <h5><a href="#" class="color-white">Подробнее о проверочном листе</a></h5>
-                    </div>
-                    <div class="panel-body margin-top-20">
-                        <span class="color-success">Орган: <code>Минтранс РФ</code></span><br>
-                        <span class="color-success">Вид надзора: <code>Проверка соблюдения требований по обеспечению транспортной безопасности</code></span><br>
-                        <span class="color-success">Вид деятельности: <code>Эксплуатация объектов транспортной инфраструктуры и транспортных средств воздушного транспорта</code></span>
+    <div class="container margin-top-80">
+        <section class="page-content">
+            <h2 class="text-center color-danger">Чек-лист проверки соблюдения требований по обеспечению траспортной
+                безопасности, учитывающие уровни безопасности для различных категорий объектов транспортной инфраструктуры и
+                траспортных средств воздушного транспорта.</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-heading background-default">
+                            <h5><a href="#" class="color-white">Подробнее о проверочном листе</a></h5>
+                        </div>
+                        <div class="panel-body margin-top-20">
+                            <span class="color-success">Орган: <code>Минтранс РФ</code></span><br>
+                            <span class="color-success">Вид надзора: <code>Проверка соблюдения требований по обеспечению транспортной безопасности</code></span><br>
+                            <span class="color-success">Вид деятельности: <code>Эксплуатация объектов транспортной инфраструктуры и транспортных средств воздушного транспорта</code></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="panel">
-            <div class="panel-body">
-                <div class="row margin-top-20">
-                    <div class="col-md-8">
-                        <p>Проверочный лист можно отправить себе на email в виде бланка, чтобы затем распечатать и
-                            заполнить на
-                            бумаге. Либо заполняйте лист здесь on-line, а затем отправляйте на почту только список
-                            выявленных
-                            нарушенийю</p>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-icon btn-primary btn-block margin-inline">
-                            <i class="icmn-envelop3" aria-hidden="true"></i>
-                            Получить бланк на email
-                        </button>
-                    </div>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row margin-top-20">
+                        <div class="col-md-8">
+                            <p>Проверочный лист можно отправить себе на email в виде бланка, чтобы затем распечатать и
+                                заполнить на
+                                бумаге. Либо заполняйте лист здесь on-line, а затем отправляйте на почту только список
+                                выявленных
+                                нарушенийю</p>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-icon btn-primary btn-block margin-inline">
+                                <i class="icmn-envelop3" aria-hidden="true"></i>
+                                Получить бланк на email
+                            </button>
+                        </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel">
-                    <div class="panel-heading background-default">
-                        <h5>
-                            <a href="#" class="color-white">Область ввода полей шапки</a>
-                        </h5>
-                    </div>
-                    <div class="panel-body margin-top-20">
-                        <div class="row margin-bottom-5">
-                            <div class="col-md-4">
-                                <label class="form-control-label" for="1">Наименование проверочного листа</label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="" id="1">
-                                    <span class="input-group-btn">
-                                            <a href="javascript: void(0);" class="btn btn-success">
-                                                Ввод
-                                            </a>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row margin-bottom-5">
-                            <div class="col-md-4">
-                                <label class="form-control-label" for="2">Наименование контрольного органа</label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="" id="2">
-                                    <span class="input-group-btn">
-                                            <a href="javascript: void(0);" class="btn btn-success">
-                                                Ввод
-                                            </a>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row margin-bottom-5">
-                            <div class="col-md-4">
-                                <label class="form-control-label" for="3">Вид контроля</label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="" id="3">
-                                    <span class="input-group-btn">
-                                            <a href="javascript: void(0);" class="btn btn-success">
-                                                Ввод
-                                            </a>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row margin-bottom-5">
-                            <div class="col-md-4">
-                                <label class="form-control-label padding-0" for="4">Указание на ограничение предмета
-                                    плановой
-                                    проверки обязательными требованиями
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="" id="4">
-                                    <span class="input-group-btn">
-                                            <a href="javascript: void(0);" class="btn btn-success">
-                                                Ввод
-                                            </a>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label class="form-control-label padding-0" for="5">Реквизиты правового акта об
-                                    утверждении формы
-                                    проверочного листа
-                                </label>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" placeholder="" id="5">
-                                    <span class="input-group-btn">
-                                            <a href="javascript: void(0);" class="btn btn-success">
-                                                Ввод
-                                            </a>
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="panel">
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="margin-bottom-50">
-                            <table class="table table-hover" id="example2" width="100%">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Вопрос</th>
-                                    <th>Источник</th>
-                                    <th>Соблюдается</th>
-                                    <th>Не соблюдается</th>
-                                    <th>Не применимо</th>
-                                    <th class="text-center">Примечания</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="question">
-                                    <td>1</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение
-                                        транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example1" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example1" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example1" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>2</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example2" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example2" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example2" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>3</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example3" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example3" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example3" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>4</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example4" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example4" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example4" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>5</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example5" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example5" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example5" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>6</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example6" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example6" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example6" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>7</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example7" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example7" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example7" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>8</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example8" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example8" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example8" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>9</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example9" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example9" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example9" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>10</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example10" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example10" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example10" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                <tr class="question">
-                                    <td>11</td>
-                                    <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
-                                        безопасности в субъекте
-                                        транспортной инфраструктуры
-                                    </td>
-                                    <td><p class="text-center">п.3.2</p></td>
-                                    <td><input type="radio" name="example11" class="center-block radio1"></td>
-                                    <td><input type="radio" name="example11" class="center-block radio2"></td>
-                                    <td><input type="radio" name="example11" class="center-block radio3"></td>
-                                    <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
-                                </tr>
-                                </tbody>
-                            </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-heading background-default">
+                            <h5>
+                                <a href="#" class="color-white">Область ввода полей шапки</a>
+                            </h5>
+                        </div>
+                        <div class="panel-body margin-top-20">
+                            <div class="row margin-bottom-5">
+                                <div class="col-md-4">
+                                    <label class="form-control-label" for="1">Наименование проверочного листа</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="" id="1">
+                                        <span class="input-group-btn">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    Ввод
+                                                </a>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-5">
+                                <div class="col-md-4">
+                                    <label class="form-control-label" for="2">Наименование контрольного органа</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="" id="2">
+                                        <span class="input-group-btn">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    Ввод
+                                                </a>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-5">
+                                <div class="col-md-4">
+                                    <label class="form-control-label" for="3">Вид контроля</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="" id="3">
+                                        <span class="input-group-btn">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    Ввод
+                                                </a>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-5">
+                                <div class="col-md-4">
+                                    <label class="form-control-label padding-0" for="4">Указание на ограничение предмета
+                                        плановой
+                                        проверки обязательными требованиями
+                                    </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="" id="4">
+                                        <span class="input-group-btn">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    Ввод
+                                                </a>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-control-label padding-0" for="5">Реквизиты правового акта об
+                                        утверждении формы
+                                        проверочного листа
+                                    </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="" placeholder="" id="5">
+                                        <span class="input-group-btn">
+                                                <a href="javascript: void(0);" class="btn btn-success">
+                                                    Ввод
+                                                </a>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="margin-bottom-50">
+                                <table class="table table-hover" id="example2" width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Вопрос</th>
+                                        <th>Источник</th>
+                                        <th>Соблюдается</th>
+                                        <th>Не соблюдается</th>
+                                        <th>Не применимо</th>
+                                        <th class="text-center">Примечания</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="question">
+                                        <td>1</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение
+                                            транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example1" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example1" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example1" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>2</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example2" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example2" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example2" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>3</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example3" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example3" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example3" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>4</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example4" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example4" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example4" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>5</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example5" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example5" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example5" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>6</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example6" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example6" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example6" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>7</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example7" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example7" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example7" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>8</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example8" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example8" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example8" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>9</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example9" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example9" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example9" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>10</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example10" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example10" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example10" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    <tr class="question">
+                                        <td>11</td>
+                                        <td class="answer-text">Назначить лицо ответственное за обеспечение транспортной
+                                            безопасности в субъекте
+                                            транспортной инфраструктуры
+                                        </td>
+                                        <td><p class="text-center">п.3.2</p></td>
+                                        <td><input type="radio" name="example11" class="center-block radio1"></td>
+                                        <td><input type="radio" name="example11" class="center-block radio2"></td>
+                                        <td><input type="radio" name="example11" class="center-block radio3"></td>
+                                        <td><textarea class="form-control" rows="2" id="l15"></textarea></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
+                        <i class="icmn-warning" aria-hidden="true"></i>
+                        Получить на email перечень нарушений
+                    </button>
                 </div>
             </div>
         </section>
-        <div class="row">
-            <div class="col-md-4 col-md-push-8">
-                <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
-                    <i class="icmn-warning" aria-hidden="true"></i>
-                    Получить на email перечень нарушений
-                </button>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- Page Scripts -->
-<script>
-    $(function () {
+    </div>
 
-        $('.select2').select2();
-        $('.select2-tags').select2({
-            tags: true,
-            tokenSeparators: [',', ' ']
-        });
+    <!-- Page Scripts -->
+    <script>
+        $(function () {
 
-        $('.selectpicker').selectpicker();
+            $('.select2').select2();
+            $('.select2-tags').select2({
+                tags: true,
+                tokenSeparators: [',', ' ']
+            });
 
-    })
-</script>
-<script>
-    $(function () {
-
-        $('#example1').DataTable({
-            responsive: true
-        });
-
-        $('#example2').DataTable({
-            autoWidth: true,
-            scrollX: true,
-            fixedColumns: true
-        });
-
-        $('#example3').DataTable({
-            autoWidth: true,
-            scrollX: true,
-            fixedColumns: true
-        });
-    })
-</script>
-<script>
-    $(function () {
-        $(".question :radio").click(function (event) {
-            var elClass = $(event.currentTarget).attr('class');
-
-            switch (elClass) {
-                case 'center-block radio1':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer1');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer1');
-                    break;
-                case 'center-block radio2':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer2');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer2');
-                    break;
-                case 'center-block radio3':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer3');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer3');
-            }
+            $('.selectpicker').selectpicker();
 
         })
+    </script>
+    <script>
+        $(function () {
 
-    })
-</script>
+            $('#example1').DataTable({
+                responsive: true
+            });
 
+            $('#example2').DataTable({
+                autoWidth: true,
+                scrollX: true,
+                fixedColumns: true
+            });
 
-<!-- End Page Scripts-->
+            $('#example3').DataTable({
+                autoWidth: true,
+                scrollX: true,
+                fixedColumns: true
+            });
+        })
+    </script>
+    <script>
+        $(function () {
+            $(".question :radio").click(function (event) {
+                var elClass = $(event.currentTarget).attr('class');
 
-<div class="cwt__footer visible-footer">
-    <div class="cwt__footer__bottom">
-        <div class="row">
-            <div class="col-md-4">
-                © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные
-                листы"</a>
+                switch (elClass) {
+                    case 'center-block radio1':
+                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer1');
+                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer1');
+                        break;
+                    case 'center-block radio2':
+                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer2');
+                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer2');
+                        break;
+                    case 'center-block radio3':
+                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer3');
+                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer3');
+                }
+
+            })
+
+        })
+    </script>
+    <!-- End Page Scripts-->
+
+    <div class="cwt__footer visible-footer">
+        <div class="cwt__footer__bottom">
+            <div class="row">
+                <div class="col-lg-4">
+                    © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные листы"</a>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-5">
+                    <small>В соответствии с п.7 Общих требований к разработке и утверждению проверочных листов, утвержденных постановлением Правительства Российсикой Федерации от 13 февраля 2017 г. №177</small>
+                </div>
             </div>
-            <div class="col-md-8"></div>
         </div>
     </div>
-</div>
-<div class="main-backdrop"><!-- --></div>
+    <div class="main-backdrop"><!-- --></div>
+
 </body>
 </html>
