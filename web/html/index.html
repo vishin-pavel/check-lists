@@ -189,11 +189,10 @@
         </div>
     </nav>
 
-    <div class="container margin-top-80">
+    <div class="container wrapper-content margin-top-80" style=" height: 300px; margin-bottom: 20px; background-color: rebeccapurple;">
         <section class="page-content">
             <section class="page-content-inner">
                 <div class="content-page">
-
 
                 </div>
             </section>
@@ -202,7 +201,7 @@
 
 
     <div class="cwt__footer visible-footer">
-        <div class="cwt__footer__bottom">
+        <div class="cwt__footer__bottom ">
             <div class="row">
                 <div class="col-lg-4">
                     © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные листы"</a>
@@ -214,7 +213,42 @@
             </div>
         </div>
     </div>
-    <div class="main-backdrop"><!-- --></div>
+    <div class="main-backdrop"><!--нужен для меню на мобильных устройствах--></div>
+
+    <script>
+
+        //без изменения высоты страницы, при згрузке
+        this.heightWindow = $(window).height();
+        this.heightFooter = $('.cwt__footer').outerHeight(true);
+        this.heightHeader = $('.top-menu').outerHeight(true);
+        this.heightContent = $('.wrapper-content').outerHeight();
+
+        this.heights = [heightWindow, heightHeader, heightContent, heightFooter];
+
+        if (heights[0] >= (heights[1] + heights[2] + heights[3])) {
+            $('.cwt__footer').addClass('navbar-fixed-bottom');
+        }
+
+        //при изменении высоты страницы
+        $(window).resize(function () {
+            this.heights = [
+                $(window).height(),
+                $('.cwt__footer').outerHeight(true),
+                $('.top-menu').outerHeight(true),
+                $('.wrapper-content').outerHeight()
+            ];
+
+            if (heights[0] >= (heights[1] + heights[2] + heights[3])) {
+                $('.cwt__footer').addClass('navbar-fixed-bottom');
+                //alert('point1: '+heightWindow+'~'+heightHeader+heightContent+heightFooter);
+            }
+            else if (heights[3] > (heights[0] - (heights[1] + heights[2]) )) {
+                $('.cwt__footer').removeClass('navbar-fixed-bottom');
+                //alert('point2: '+heightWindow+'~'+heightHeader+heightContent+heightFooter);
+            }
+        })
+
+    </script>
 
 </body>
 </html>
