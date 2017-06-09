@@ -1,4 +1,4 @@
-//Функция выравнивания дивов
+ //Функция выравнивания дивов
 function setEqualHeight(columns) {
     var tallestcolumn = 0;
     columns.each(
@@ -46,3 +46,20 @@ var fileBlockConstructor = function($el){
         event.data.deleteFile($(event.currentTarget))
     }, this);
 };
+
+
+//изменение цвета ячейки названия вопроса (при клике)
+ var statusQuestionConstructor = function ($el) {
+     this.$el = $el;
+     this.swichColorStatusQuestion = function (questionRadioElement) {
+         var elClass = $(questionRadioElement).attr('class');
+         var numberElClass = parseInt(elClass.replace(/\D+/g,""));
+         var currentClass = $(questionRadioElement).parents('tr.question').attr('data-current-answer');
+
+         $(questionRadioElement).parents('tr.question').removeClass(currentClass).addClass('answer' + numberElClass);
+         $(questionRadioElement).parents('tr.question').attr('data-current-answer', 'answer' + numberElClass);
+     };
+     var tr = $(":radio", $el).click(this, function (event) {
+         event.data.swichColorStatusQuestion(event.currentTarget)
+     });
+ };

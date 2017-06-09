@@ -526,31 +526,9 @@
             });
         })
     </script>
+
     <script>
-        $(function () {
-            $(".question :radio").click(function (event) {
-                var elClass = $(event.currentTarget).attr('class');
-
-                switch (elClass) {
-                    case 'center-block radio1':
-                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer1');
-                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer1');
-                        break;
-                    case 'center-block radio2':
-                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer2');
-                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer2');
-                        break;
-                    case 'center-block radio3':
-                        var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                        $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer3');
-                        $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer3');
-                }
-
-            })
-
-        })
+        var swichColorStatusQuestion = new statusQuestionConstructor($('.question'));
     </script>
     <!-- End Page Scripts-->
 
