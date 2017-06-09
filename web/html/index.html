@@ -189,7 +189,7 @@
         </div>
     </nav>
 
-    <div class="container wrapper-content margin-top-80" style=" height: 300px; margin-bottom: 20px; background-color: rebeccapurple;">
+    <div class="container wrapper-content margin-top-80" style=" height: 300px; margin-bottom: 300px; background-color: rebeccapurple;">
         <section class="page-content">
             <section class="page-content-inner">
                 <div class="content-page">
@@ -219,32 +219,30 @@
 
         //без изменения высоты страницы, при згрузке
         this.heightWindow = $(window).height();
+        this.heightHeaderAndContent = $('.wrapper-content').outerHeight(true);
         this.heightFooter = $('.cwt__footer').outerHeight(true);
-        this.heightHeader = $('.top-menu').outerHeight(true);
-        this.heightContent = $('.wrapper-content').outerHeight();
 
-        this.heights = [heightWindow, heightHeader, heightContent, heightFooter];
+        this.heights = [heightWindow, heightHeaderAndContent, heightFooter];
 
-        if (heights[0] >= (heights[1] + heights[2] + heights[3])) {
+
+        if (heights[0] >= (heights[1]  + heights[2])) {
             $('.cwt__footer').addClass('navbar-fixed-bottom');
+            //alert('point0: '+heights[0]+' : '+ heights[1]+'+'+heights[2] +' = '+ (heights[1]+heights[2]) );
         }
 
         //при изменении высоты страницы
         $(window).resize(function () {
             this.heights = [
                 $(window).height(),
-                $('.cwt__footer').outerHeight(true),
-                $('.top-menu').outerHeight(true),
-                $('.wrapper-content').outerHeight()
+                $('.wrapper-content').outerHeight(true),
+                $('.cwt__footer').outerHeight(true)
             ];
 
-            if (heights[0] >= (heights[1] + heights[2] + heights[3])) {
+            if (heights[0] >= (heights[1]  + heights[2])) {
                 $('.cwt__footer').addClass('navbar-fixed-bottom');
-                //alert('point1: '+heightWindow+'~'+heightHeader+heightContent+heightFooter);
             }
-            else if (heights[3] > (heights[0] - (heights[1] + heights[2]) )) {
+            else if (heights[2] > (heights[0] - heights[1])) {
                 $('.cwt__footer').removeClass('navbar-fixed-bottom');
-                //alert('point2: '+heightWindow+'~'+heightHeader+heightContent+heightFooter);
             }
         })
 
