@@ -115,12 +115,12 @@
         </div>
     </nav>
     <nav class="top-menu">
-    <div class="menu-icon-container hidden-md-up">
+        <div class="menu-icon-container hidden-md-up">
         <div class="animate-menu-button left-menu-toggle">
             <div><!-- --></div>
         </div>
     </div>
-    <div class="menu">
+        <div class="menu">
         <div class="menu-user-block">
             <div class="dropdown dropdown-avatar">
                 <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -188,9 +188,9 @@
             </div>
         </div>
     </div>
-</nav>
+    </nav>
 
-    <div class="container margin-top-80">
+    <div class="container wrapper-content margin-top-80">
         <section class="page-content">
             <h2 class="text-center color-danger">Чек-лист проверки соблюдения требований по обеспечению траспортной
                 безопасности, учитывающие уровни безопасности для различных категорий объектов транспортной инфраструктуры и
@@ -546,6 +546,39 @@
         </div>
     </div>
     <div class="main-backdrop"><!-- --></div>
+
+    <script>
+
+        //без изменения высоты страницы, при згрузке
+        this.heightWindow = $(window).height();
+        this.heightHeaderAndContent = $('.wrapper-content').outerHeight(true);
+        this.heightFooter = $('.cwt__footer').outerHeight(true);
+
+        this.heights = [heightWindow, heightHeaderAndContent, heightFooter];
+
+
+        if (heights[0] >= (heights[1]  + heights[2])) {
+            $('.cwt__footer').addClass('navbar-fixed-bottom');
+            //alert('point0: '+heights[0]+' : '+ heights[1]+'+'+heights[2] +' = '+ (heights[1]+heights[2]) );
+        }
+
+        //при изменении высоты страницы
+        $(window).resize(function () {
+            this.heights = [
+                $(window).height(),
+                $('.wrapper-content').outerHeight(true),
+                $('.cwt__footer').outerHeight(true)
+            ];
+
+            if (heights[0] >= (heights[1]  + heights[2])) {
+                $('.cwt__footer').addClass('navbar-fixed-bottom');
+            }
+            else if (heights[2] > (heights[0] - heights[1])) {
+                $('.cwt__footer').removeClass('navbar-fixed-bottom');
+            }
+        })
+
+    </script>
 
 </body>
 </html>

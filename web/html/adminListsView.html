@@ -190,7 +190,7 @@
     </nav>
 
 
-    <div class="container margin-top-80">
+    <div class="container wrapper-content margin-top-80">
         <section class="page-content">
             <section class="page-content-inner">
 
@@ -532,6 +532,39 @@
         </div>
     </div>
     <div class="main-backdrop"><!-- --></div>
+
+    <script>
+
+        //без изменения высоты страницы, при згрузке
+        this.heightWindow = $(window).height();
+        this.heightHeaderAndContent = $('.wrapper-content').outerHeight(true);
+        this.heightFooter = $('.cwt__footer').outerHeight(true);
+
+        this.heights = [heightWindow, heightHeaderAndContent, heightFooter];
+
+
+        if (heights[0] >= (heights[1]  + heights[2])) {
+            $('.cwt__footer').addClass('navbar-fixed-bottom');
+            //alert('point0: '+heights[0]+' : '+ heights[1]+'+'+heights[2] +' = '+ (heights[1]+heights[2]) );
+        }
+
+        //при изменении высоты страницы
+        $(window).resize(function () {
+            this.heights = [
+                $(window).height(),
+                $('.wrapper-content').outerHeight(true),
+                $('.cwt__footer').outerHeight(true)
+            ];
+
+            if (heights[0] >= (heights[1]  + heights[2])) {
+                $('.cwt__footer').addClass('navbar-fixed-bottom');
+            }
+            else if (heights[2] > (heights[0] - heights[1])) {
+                $('.cwt__footer').removeClass('navbar-fixed-bottom');
+            }
+        })
+
+    </script>
 
 </body>
 </html>
