@@ -14,7 +14,7 @@ $blue: #0088ff;
 $blue-darken: darken($blue, 8%);
 $orange: #f2a654;
 $yellow: yellow;
-
+$gray-dark-more: #607d8b;
 // Accent colors
 $default: #acb7bf;
 $primary: #01a8fe;
@@ -23,7 +23,7 @@ $success: #46be8a;
 $info: #0190da;
 $warning: #f39834;
 $danger: #fb434a;
-
+$label: #0288d1;
 // Transitions
 @mixin transition-fast() {
     transition: all 0.05s ease-in-out;

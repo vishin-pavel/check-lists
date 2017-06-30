@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: $font-text;
-    background: $gray;
+    background: $white;
     color: $black-lighten;
     overflow-x: hidden;
 }
@@ -156,9 +156,9 @@ pre {
  */
 
 nav.top-menu {
-    height: 60px;
-    background: $white;
-    border-bottom: 1px solid $gray-darken;
+    height: 47px;
+    background: $gray-dark-more;
+    //border-bottom: 1px solid $gray-darken;
     z-index: 110;
     //position: fixed;
     //top: 0px;
@@ -183,19 +183,19 @@ nav.top-menu {
         margin: 12px 0px 0px 20px;
     }
     .menu {
-        height: 60px;
+        height: 36px;
         padding: 0px 16px;
         a {
             display: block;
             height: 100%;
-            color: $black-light;
+            color: $white;
           padding-left: 8px;
           padding-right: 8px;
         }
         .button {
             a:hover, a:focus {
-                color: $black;
-                border-bottom: 2px solid $danger;
+                color: $white;
+                border-bottom: 2px solid $label;
             }
             .dropdown-menu {
                 a:hover, a:focus {
@@ -232,20 +232,20 @@ nav.top-menu {
                 }
             }
             .dropdown-toggle {
-                height: 60px;
-                line-height: 60px;
+                height: 36px;
+                line-height: 40px;
             }
             .dropdown-menu {
                 min-width: 80px;
             }
         }
         .menu-info-block {
-            margin-left: 35%;
-            //margin-right: 60px;
+            margin-left: 16%;
+            margin-right: 60px;
             .left {
                 float: left;
                 .header-buttons {
-                    height: 60px;
+                    height: 36px;
                     //margin-top: 9px;
                     @media (max-width: $xs-max-width) {
                         .dropdown-inline-button {
@@ -254,8 +254,8 @@ nav.top-menu {
                     }
                     .button {
                         display: inline-block;
-                        height: 60px;
-                        line-height: 60px;
+                        height: 36px;
+                        //line-height: 60px;
                     }
                 }
             }
@@ -819,10 +819,10 @@ nav.left-menu {
 }
 
 .panel {
-    background: $white;
+    background: $gray;
     border: 1px solid $gray-darken;
     padding: 0px;
-    border-radius: 5px;
+    //border-radius: 5px;
     margin-bottom: 16px;
     .panel:last-child {
         margin-bottom: 0px;
