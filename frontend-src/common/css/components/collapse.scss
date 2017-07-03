@@ -10,6 +10,7 @@
         border-radius: 0;
         margin-bottom: 0px;
         border-bottom-width: 0px;
+      background-color: $white;
         &:first-child {
             border-radius: 5px 5px 0 0
         }
@@ -34,7 +35,7 @@
     }
     .accordion-indicator {
         padding-top: 1px;
-        color: $gray-darken;
+      color: $icmn;
         .plus {
             display: none;
         }

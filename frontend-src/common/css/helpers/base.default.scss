@@ -172,7 +172,7 @@ nav.top-menu {
         left: -1px;
         width: 1px;
         height: 100%;
-        background: $white;
+        background: $gray-dark-more;
     }
     & + .page-content {
         margin-top: 0px;
@@ -199,7 +199,7 @@ nav.top-menu {
             }
             .dropdown-menu {
                 a:hover, a:focus {
-                    color: $blue;
+                    color: $white;
                     text-shadow: inherit;
                     background: inherit;
                     filter: inherit;
@@ -228,7 +228,8 @@ nav.top-menu {
             }
             .dropdown {
                 a:hover, a:focus {
-                    color: $info;
+                    color: $white;
+                    border-bottom: 2px solid $label;
                 }
             }
             .dropdown-toggle {

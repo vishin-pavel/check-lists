@@ -6,6 +6,46 @@
 .icons {
   border: solid 3px #0288d1;
 }
+
+.information {
+  background-image: url("../img/1.jpg");
+  background-color: rgba(0, 0, 0, .5);
+  background-blend-mode: darken;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 20px;
+  font-stretch: condensed;
+  text-align: center;
+  color: #263238;
+  margin-top: 20px;
+}
+
+.dropdown-menu {
+  background-color: #607d8b;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input[type="text"]::-moz-placeholder {
+  color: #ffffff;
+}
+
+.caption {
+  position: absolute;
+}
+
+.form-control {
+  background-color: transparent;
+  color: #ffffff;
+}
 .capabilities {
   border: 1px solid #eceff4;
   border-radius: 5px;
@@ -16,12 +56,9 @@
 .faq .nav-tabs-horizontal {
   border: 1px solid #eceff4;
   min-height: 373px;
-  border-radius: 5px;
-  background-color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .info-title a h4 {
   opacity: 0.7;
 }

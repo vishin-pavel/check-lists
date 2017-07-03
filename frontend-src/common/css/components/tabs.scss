@@ -13,19 +13,25 @@
 }
 
 .nav-tabs-horizontal {
+    background-color: $gray;
     .nav-tabs {
-        border-bottom: 1px solid $gray-darken;
+        border-bottom: 3px solid $label;
         .nav-item {
             margin-bottom: -2px;
             cursor: pointer;
             .nav-link {
+                border-radius: 0;
+            !important;
+                font-size: 24px;
                 border: none;
                 border-bottom: 3px solid transparent;
                 &.active, &:focus {
-                    border-bottom-color: $primary !important;
+                    //border-bottom-color: $primary !important;
+                    background-color: $label;
+                    color: $white;
                 }
                 &:hover {
-                    border-bottom-color: $gray-darken;
+                    //border-bottom-color: $gray-darken;
                 }
             }
         }

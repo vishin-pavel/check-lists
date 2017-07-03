@@ -1,6 +1,6 @@
 // Colors
 $white: #ffffff;
-$gray: #eceff4;
+$gray: #f5f5f5;
 $gray-lighten: lighten($gray, 2%);
 $gray-lighten-more: lighten($gray, 4%);
 $gray-darken: darken($gray, 4%);
@@ -24,6 +24,7 @@ $info: #0190da;
 $warning: #f39834;
 $danger: #fb434a;
 $label: #0288d1;
+$icmn: #78909c;
 // Transitions
 @mixin transition-fast() {
     transition: all 0.05s ease-in-out;
