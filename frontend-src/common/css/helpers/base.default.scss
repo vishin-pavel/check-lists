@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: $black-lighten-more;
+    color: $link;
     @include transition-fast();
     &:hover, &:focus {
         color: $blue;
@@ -821,7 +821,7 @@ nav.left-menu {
 
 .panel {
     background: $gray;
-    border: 1px solid $gray-darken;
+    //border: 1px solid $gray-darken;
     padding: 0px;
     //border-radius: 5px;
     margin-bottom: 16px;
@@ -1489,6 +1489,7 @@ nav.top-submenu, .top-submenu {
 body {
     &.single-page {
         height: 100%;
+        background-color: #eff2f5;
         .page-content {
             height: 100%;
             max-width: none !important;
@@ -1496,7 +1497,7 @@ body {
             .page-content-inner {
                 background-size: cover;
                 min-height: 100%;
-                display: flex;
+                //display: flex;
                 align-items: center;
                 flex-direction: column;
                 justify-content: space-between;
