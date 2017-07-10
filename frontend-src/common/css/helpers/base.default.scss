@@ -321,15 +321,15 @@ nav.left-menu {
     bottom: 0px;
     left: 0px;
     width: 240px;
-    background: $white;
+    background: $header;
     outline: none;
-    border-right: 1px solid $gray-darken;
+    //border-right: 1px solid $gray-darken;
     @include transition-menu();
     & + * + .page-content {
-        margin-left: 240px;
+        margin-left: 290px;
     }
     & + nav.top-menu {
-        left: 240px;
+        left: 290px;
     }
     .jspScrollable {
         .jspTrack {
@@ -340,14 +340,14 @@ nav.left-menu {
         font-size: 80%;
     }
     .logo-container {
-        padding: 21px 25px 0px;
+        padding: 14px 25px 0px;
         width: 240px;
-        height: 80px;
+        height: 60px;
         float: left;
         position: absolute;
         top: 0px;
         left: 0px;
-        border-bottom: 1px solid $gray-darken;
+        //border-bottom: 1px solid $gray-darken;
         .logo {
             display: block;
             max-width: 150px;
