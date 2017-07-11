@@ -33,6 +33,14 @@
   background-color: #607d8b;
 }
 
+.placeholder-list-page input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.placeholder-list-page input[type="text"]::-moz-placeholder {
+  color: #000000;
+}
+
 input[type="text"]::-webkit-input-placeholder {
   color: #ffffff;
 }

@@ -179,34 +179,15 @@
     <section class="page-content margin-top-50">
         <div class="page-content-inner">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="panel">
-                        <div class="panel-heading background-default">
-                            <h5 class="color-white">Импорт нового листа</h5>
-                        </div>
-                        <div class="panel-body margin-top-20">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <select class="form-control" id="l">
-                                        <option value="Option 1">Выбрать файл для загрузки</option>
-                                        <option value="Option 2">Файл 1</option>
-                                        <option value="Option 3">Файл 2</option>
-                                        <option value="Option 4">Файл 3</option>
-                                        <option value="Option 5">Файл 4</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 col-md-push-1">
-                                    <label for="l" class="font-size-16">Файл не выбран</label>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-12">
+                    <div class="panel-body">
+                        <input type="file" class="dropify" data-height="400"/>
                     </div>
                 </div>
             </div>
             <div class="row margin-top-20">
-                <div class="col-md-2 col-md-push-4">
-                    <button type="button" class="btn btn-icon btn-success btn-block margin-inline">
-                        <i class="icmn-download" aria-hidden="true"></i>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-icon btn-primary btn-block margin-inline">
                         Импортировать
                     </button>
                 </div>
@@ -228,6 +209,13 @@
 
     });
 
+</script>
+<script>
+    $(function () {
+
+        $('.dropify').dropify();
+
+    });
 </script>
 <!-- End Page Scripts-->
 
