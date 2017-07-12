@@ -104,7 +104,7 @@
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
 </head>
-<body class="theme-default">
+<body class="theme-default background-light-blue">
 <nav class="top-menu box-shadow">
     <div class="menu-icon-container hidden-md-up">
         <div class="animate-menu-button left-menu-toggle">
@@ -176,56 +176,71 @@
 </nav>
 
 <div class="container">
-    <section class="page-content margin-top-50">
+    <section class="page-content margin-top-20">
         <div class="page-content-inner">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="panel">
-                        <div class="panel-heading background-default">
-                            <h4 class="color-white">Статистика</h4>
+                <div class="col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="step-block step-primary">
+                        <span class="step-digit">
+                            <i class="icmn-more2"><!-- --></i>
+                        </span>
+                        <div class="step-desc">
+                            <span>Проверочных листов</span>
+                            <p>
+                                <span class="font-size-30">23</span>
+                            </p>
                         </div>
-                        <section class="panel-body">
-                            <div class="row margin-top-5">
-                                <div class="col-md-6">
-                                    <label class="form-control-label" for="l">Проверочных листов</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="password" class="form-control" placeholder="23" readonly="" id="l">
-                                </div>
-                            </div>
-                            <div class="row margin-top-5">
-                                <div class="col-md-6">
-                                    <label class="form-control-label" for="2">Из них активных</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="password" class="form-control" placeholder="15" readonly="" id="2">
-                                </div>
-                            </div>
-                            <div class="row margin-top-5">
-                                <div class="col-md-6">
-                                    <label class="form-control-label" for="3">Поисков сегодня</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="password" class="form-control" placeholder="235" readonly="" id="3">
-                                </div>
-                            </div>
-                            <div class="row margin-top-5">
-                                <div class="col-md-6">
-                                    <label class="form-control-label" for="4">Заполнено сегодня</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="password" class="form-control" placeholder="170" readonly="" id="4">
-                                </div>
-                            </div>
-                        </section>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="step-block step-warning">
+                        <span class="step-digit">
+                            <i class="icmn-more2"><!-- --></i>
+                        </span>
+                        <div class="step-desc">
+                            <span>Из них активных</span>
+                            <p>
+                                <span class="font-size-30">12</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="step-block step-success">
+                        <span class="step-digit">
+                            <i class="icmn-more2"><!-- --></i>
+                        </span>
+                        <div class="step-desc">
+                            <span>Поисков сегодня</span>
+                            <p>
+                                <span class="font-size-30">234</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="step-block step-secondary">
+                        <span class="step-digit">
+                            <i class="icmn-more2"><!-- --></i>
+                        </span>
+                        <div class="step-desc">
+                            <span>Заполнено сегодня</span>
+                            <p>
+                                <span class="font-size-30">170</span>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row margin-top-20">
                 <div class="col-md-12">
-                    <div class="panel">
-                        <div class="panel-heading background-default">
-                            <h4 class="color-white">График заполнения за месяц</h4>
+                    <div class="panel background-white">
+                        <div class="panel-heading">
+                            <h4>График заполнения за месяц</h4>
                         </div>
                         <section class="panel-body">
                             <div class="chart-line height-300 chartist"></div>

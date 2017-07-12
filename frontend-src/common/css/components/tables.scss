@@ -8,26 +8,32 @@
   background-color: $white;
     thead {
         th {
+          background-color: $header;
             border-bottom: 1px solid $gray;
             outline: none !important;
-          background-color: $table;
+          color: $white;
             &:focus {
                 background: $gray-lighten;
             }
         }
     }
     td, th {
-      border: 1px solid $gray;
+
         &:focus {
             background-color: $gray;
         }
     }
     tbody {
+      td, th {
+        //box-sizing: border-box;
+        //border: 1px solid $gray;
+
         tr:first-child {
-            td {
-                border-top: none;
-            }
+          td {
+            border-top: none;
+          }
         }
+      }
     }
     &.table-hover {
         tbody {

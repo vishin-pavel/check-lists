@@ -55,7 +55,7 @@ input[type="text"]::-moz-placeholder {
 
 .form-control {
   background-color: transparent;
-  color: #ffffff;
+  //color: #ffffff;
 }
 .capabilities {
   border: 1px solid #eceff4;
@@ -107,16 +107,14 @@ input[type="text"]::-moz-placeholder {
 }
 
 .question.answer1 .answer-text {
-  background-color: #46be8a;
-  color: #ffffff;
+  background-color: #dcedc8;
 }
 
 .question.answer2 .answer-text {
-  background-color: #fb434a;
-  color: #ffffff;
+  background-color: #ffebee;
 }
 
 .question.answer3 .answer-text {
-  background-color: #acb7bf;
+  background-color: #f5f5f5;
 }
 
