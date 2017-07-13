@@ -823,143 +823,282 @@ nav.left-menu {
     background: $gray;
     border: 1px solid $gray-darken;
     padding: 0px;
-    //border-radius: 5px;
-    margin-bottom: 16px;
-    .panel:last-child {
+  margin-bottom: 16px;
+  .panel:last-child {
+    margin-bottom: 0px;
+  }
+  .panel-heading {
+    padding: 25px;
+    border-radius: 5px 5px 0 0;
+    & + .panel-body {
+      padding-top: 0px;
+    }
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      &:last-child {
         margin-bottom: 0px;
+      }
     }
-    .panel-heading {
-        padding: 25px;
-      border-radius: 5px 5px 0 0;
-        & + .panel-body {
-            padding-top: 0px;
-        }
-        h1, h2, h3, h4, h5, h6,
-        .h1, .h2, .h3, .h4, .h5, .h6 {
-            &:last-child {
-                margin-bottom: 0px;
-            }
-        }
-        .dropdown-inline-button {
-            padding: 0px;
-        }
-        &:after, .panel-heading-button:after {
-            display:table;
-            clear:both;
-            content:"";
-        }
+    .dropdown-inline-button {
+      padding: 0px;
     }
-    .panel-body {
-        padding: 25px;
-        & + .panel-footer {
-            padding-top: 0px;
-        }
-        .list-group-item {
-            &.height-fixed {
-                height: 100px;
-                overflow: hidden;
-                &:focus, &:hover {
-                    color: #555;
-                    text-decoration: none;
-                    background-color: #f5f5f5;
-                }
-                .list-group-item-right-block i {
-                    &.fa-unlock {
-                        color: $success;
-                    }
-                    &.fa-lock {
-                        color: $danger;
-                        padding-right: 10px;
-                    }
-                    &.fa-file-pdf-o {
-                        color: $danger;
-                    }
-                    &.fa-file-pdf-o:hover {
-                        color: $orange;
-                    }
-                    &.fa-check {
-                      color: $secondary;
-                    }
-                    &.fa-check.fa-check-added, &.fa-check:hover {
-                      color: $success;
-                    }
-                }
-            }
-        }
-        .panel-body-block-relative {
-            position: relative;
-            border: 0;
-            .bottom-right {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-        }
+    &:after, .panel-heading-button:after {
+      display: table;
+      clear: both;
+      content: "";
     }
-    .panel-footer {
-        padding: 25px;
+  }
+  .panel-body {
+    padding: 25px;
+    & + .panel-footer {
+      padding-top: 0px;
     }
-    &.panel-with-borders {
-        > .panel-heading {
-            border-bottom: 1px solid $gray-darken;
+    .list-group-item {
+      &.height-fixed {
+        height: 100px;
+        overflow: hidden;
+        &:focus, &:hover {
+          color: #555;
+          text-decoration: none;
+          background-color: #f5f5f5;
         }
-        > .panel-body {
-            padding-top: 25px;
+        .list-group-item-right-block i {
+          &.fa-unlock {
+            color: $success;
+          }
+          &.fa-lock {
+            color: $danger;
+            padding-right: 10px;
+          }
+          &.fa-file-pdf-o {
+            color: $danger;
+          }
+          &.fa-file-pdf-o:hover {
+            color: $orange;
+          }
+          &.fa-check {
+            color: $secondary;
+          }
+          &.fa-check.fa-check-added, &.fa-check:hover {
+            color: $success;
+          }
         }
-        > .panel-footer {
-            border-top: 1px solid $gray-darken;
-            margin-top: -1px;
-            padding-top: 25px;
-        }
+      }
     }
+    .panel-body-block-relative {
+      position: relative;
+      border: 0;
+      .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  .panel-footer {
+    padding: 25px;
+  }
+  &.panel-with-borders {
+    > .panel-heading {
+      border-bottom: 1px solid $gray-darken;
+    }
+    > .panel-body {
+      padding-top: 25px;
+    }
+    > .panel-footer {
+      border-top: 1px solid $gray-darken;
+      margin-top: -1px;
+      padding-top: 25px;
+    }
+  }
 
-    &.panel-with-sidebar {
-        position: relative;
-        &:before {
-            content: '';
-            display: block;
-            width: 1px;
-            background: $gray-darken;
-            position: absolute;
-            left: 240px;
-            top: 0px;
-            height: 100%;
-            z-index: 0;
-        }
-        &:after {
-            display: table;
-            clear: both;
-            content: "";
-        }
-        .panel-sidebar {
-            float: left;
-            width: 240px;
-            padding: 25px;
-            margin-bottom: -25px;
-        }
-        .panel-heading, .panel-body, .panel-footer {
-            margin-left: 240px;
-        }
-        &.panel-with-right-sidebar {
-            &:before {
-                left: auto;
-                right: 240px;
-            }
-            .panel-sidebar {
-                float: right;
-                border-right: 0px;
-            }
-            .panel-heading, .panel-body, .panel-footer {
-                margin-left: 0px;
-                margin-right: 240px;
-            }
-        }
+  &.panel-with-sidebar {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 1px;
+      background: $gray-darken;
+      position: absolute;
+      left: 240px;
+      top: 0px;
+      height: 100%;
+      z-index: 0;
     }
-    &.panel-search-border-color {
-      border-color: $default;
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
     }
+    .panel-sidebar {
+      float: left;
+      width: 240px;
+      padding: 25px;
+      margin-bottom: -25px;
+    }
+    .panel-heading, .panel-body, .panel-footer {
+      margin-left: 240px;
+    }
+    &.panel-with-right-sidebar {
+      &:before {
+        left: auto;
+        right: 240px;
+      }
+      .panel-sidebar {
+        float: right;
+        border-right: 0px;
+      }
+      .panel-heading, .panel-body, .panel-footer {
+        margin-left: 0px;
+        margin-right: 240px;
+      }
+    }
+  }
+  &.panel-search-border-color {
+    border-color: $default;
+  }
 }
 
+.panel-alternative {
+  background: $gray;
+  border: 1px solid $gray-darken;
+  border-radius: 5px;
+  padding: 0px;
+  margin-bottom: 16px;
+  .panel:last-child {
+    margin-bottom: 0px;
+  }
+  .panel-heading {
+    padding: 25px;
+    border-radius: 5px 5px 0 0;
+    & + .panel-body {
+      padding-top: 0px;
+    }
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    .dropdown-inline-button {
+      padding: 0px;
+    }
+    &:after, .panel-heading-button:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+  }
+  .panel-body {
+    padding: 25px;
+    & + .panel-footer {
+      padding-top: 0px;
+    }
+    .list-group-item {
+      &.height-fixed {
+        height: 100px;
+        overflow: hidden;
+        &:focus, &:hover {
+          color: #555;
+          text-decoration: none;
+          background-color: #f5f5f5;
+        }
+        .list-group-item-right-block i {
+          &.fa-unlock {
+            color: $success;
+          }
+          &.fa-lock {
+            color: $danger;
+            padding-right: 10px;
+          }
+          &.fa-file-pdf-o {
+            color: $danger;
+          }
+          &.fa-file-pdf-o:hover {
+            color: $orange;
+          }
+          &.fa-check {
+            color: $secondary;
+          }
+          &.fa-check.fa-check-added, &.fa-check:hover {
+            color: $success;
+          }
+        }
+      }
+    }
+    .panel-body-block-relative {
+      position: relative;
+      border: 0;
+      .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  .panel-footer {
+    padding: 25px;
+  }
+  &.panel-with-borders {
+    > .panel-heading {
+      border-bottom: 1px solid $gray-darken;
+    }
+    > .panel-body {
+      padding-top: 25px;
+    }
+    > .panel-footer {
+      border-top: 1px solid $gray-darken;
+      margin-top: -1px;
+      padding-top: 25px;
+    }
+  }
+
+  &.panel-with-sidebar {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 1px;
+      background: $gray-darken;
+      position: absolute;
+      left: 240px;
+      top: 0px;
+      height: 100%;
+      z-index: 0;
+    }
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    .panel-sidebar {
+      float: left;
+      width: 240px;
+      padding: 25px;
+      margin-bottom: -25px;
+    }
+    .panel-heading, .panel-body, .panel-footer {
+      margin-left: 240px;
+    }
+    &.panel-with-right-sidebar {
+      &:before {
+        left: auto;
+        right: 240px;
+      }
+      .panel-sidebar {
+        float: right;
+        border-right: 0px;
+      }
+      .panel-heading, .panel-body, .panel-footer {
+        margin-left: 0px;
+        margin-right: 240px;
+      }
+    }
+  }
+  &.panel-search-border-color {
+    border-color: $default;
+  }
+}
 .sidebar-large {
     &.panel {
         position: relative;
