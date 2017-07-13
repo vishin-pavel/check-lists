@@ -103,7 +103,7 @@
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
 </head>
-<body class="theme-blue menu-fixed">
+<body class="theme-blue menu-fixed background-light-blue">
     <!--<div class="header-page margin-top-50 margin-bottom-20">-->
         <!--<div class="container">-->
             <!--<div class="row">-->
@@ -187,51 +187,58 @@
         <section class="page-content">
             <section class="page-content-inner">
 
-                <div class="panel">
-                    <div class="panel-heading" style="border: 0px solid red;">
-                        <div class="panel-heading-button">
-                            <button type="button" class="pull-left btn btn-small btn-success">
-                                <i class="fa fa-save" aria-hidden="true"> Сохранить</i>
-                            </button>
-                        </div>
-                        <h5 class="pull-left color-danger margin-top-20">Просмотр проверочного листа</h5>
-                    </div>
-                    <div class="panel-body" style="border: 0px solid red;">
+                <div class="panel-alternative background-white">
+                    <div class="panel-body">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="margin-bottom-20">
-                                    <p class="font-size-16"><i class="fa fa-user-times" aria-hidden="true"></i> Доступность листа пользователям</p>
+                            <div class="col-lg-8">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="example6" checked="">
+                                        <p class="font-size-14">Лист доступен всем пользователям</p>
+                                    </label>
+                                </div>
 
-                                    <div class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-default-outline">
-                                            <input type="radio" name="example5">
-                                            Red Label
-                                        </label>
-                                        <label class="btn btn-default-outline">
-                                            <input type="radio" name="example5">
-                                            Blue Label
-                                        </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p class="font-size-14"><i class="icmn-upload9" aria-hidden="true"></i> Комментарий
+                                    администратора</p>
+                                <div class="dropify-wrapper touch-fallback">
+                                    <div class="dropify-message"><span class="file-icon"></span>
+                                        <p>Drag and drop a file here or click</p>
+                                        <p class="dropify-error">Ooops, something wrong appended.</p></div>
+                                    <div class="dropify-loader"></div>
+                                    <div class="dropify-errors-container">
+                                        <ul></ul>
+                                    </div>
+                                    <input type="file" class="dropify">
+                                    <button type="button" class="dropify-clear">Remove</button>
+                                    <div class="dropify-preview"><span class="dropify-render"></span>
+                                        <div class="dropify-infos">
+                                            <div class="dropify-infos-inner"><p class="dropify-filename"><span
+                                                    class="file-icon"></span> <span
+                                                    class="dropify-filename-inner"></span></p>
+                                                <p class="dropify-infos-message">Drag and drop or click to replace</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-20">
+                            <div class="col-lg-8">
                                 <div class="margin-bottom-20">
-                                    <p class="font-size-16"><i class="fa fa-comment" aria-hidden="true"></i> Комментарий администратора</p>
+                                    <p class="font-size-14"><i class="fa fa-comment" aria-hidden="true"></i> Комментарий
+                                        администратора</p>
                                     <div class="form-group">
-                                        <textarea id="textarea" class="form-control" placeholder="Type and press enter" style="overflow: hidden; overflow-wrap: break-word; height: 100px;"></textarea>
+                                        <textarea id="textarea" class="form-control" placeholder="Type and press enter"
+                                                  style="overflow: hidden; overflow-wrap: break-word; height: 100px;"></textarea>
                                     </div>
+                                    <button type="button" class="btn btn-info margin-inline">Сохранить</button>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="margin-bottom-20">
-                                    <div class="margin-bottom-20">
-                                        <p class="font-size-16"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Подгрузить PDF бланк проверочного листа</p>
-
-
-                                        <input type="file" class="dropify" data-default-file="" />
-
-
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
