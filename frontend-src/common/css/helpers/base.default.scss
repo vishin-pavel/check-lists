@@ -156,14 +156,14 @@ pre {
  */
 
 nav.top-menu {
-    height: 47px;
+  height: 80px;
     background: $gray-dark-more;
-    //border-bottom: 1px solid $gray-darken;
+  border-bottom: 1px solid $gray-darken;
     z-index: 110;
-    //position: fixed;
-    //top: 0px;
-    //left: 0px;
-    //right: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
     &:before {
         display: block;
         content: '';
@@ -180,11 +180,11 @@ nav.top-menu {
     .menu-icon-container {
         font-size: 27px;
         float: left;
-        margin: 12px 0px 0px 20px;
+      margin: 25px 0px 0px 20px;
     }
     .menu {
-        height: 36px;
-        padding: 0px 16px;
+      height: 80px;
+      padding: 21px 16px;
         a {
             display: block;
             height: 100%;
@@ -241,13 +241,11 @@ nav.top-menu {
             }
         }
         .menu-info-block {
-            margin-left: 16%;
-            margin-right: 60px;
+          margin-right: 80px;
             .left {
                 float: left;
                 .header-buttons {
-                    height: 36px;
-                    //margin-top: 9px;
+                  margin-top: 9px;
                     @media (max-width: $xs-max-width) {
                         .dropdown-inline-button {
                             padding-right: 0px;
@@ -256,7 +254,7 @@ nav.top-menu {
                     .button {
                         display: inline-block;
                         height: 36px;
-                        //line-height: 60px;
+                      line-height: 60px;
                     }
                 }
             }
@@ -264,8 +262,8 @@ nav.top-menu {
                 float: right;
             }
         }
-        @media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
-        @media (max-width: $md-max-width) { .menu-info-block { margin-left: 6%; } }
+      //@media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
+      //@media (max-width: $md-max-width) { .menu-info-block { margin-left: 6%; } }
 
         .search-block {
             @include transition-slow();
@@ -326,10 +324,10 @@ nav.left-menu {
     //border-right: 1px solid $gray-darken;
     @include transition-menu();
     & + * + .page-content {
-        margin-left: 290px;
+      margin-left: 240px;
     }
     & + nav.top-menu {
-        left: 290px;
+      left: 240px;
     }
     .jspScrollable {
         .jspTrack {
@@ -340,9 +338,9 @@ nav.left-menu {
         font-size: 80%;
     }
     .logo-container {
-        padding: 14px 25px 0px;
+      padding: 21px 25px 0px;
         width: 240px;
-        height: 60px;
+      height: 0px;
         float: left;
         position: absolute;
         top: 0px;
@@ -1612,11 +1610,11 @@ nav.top-submenu, .top-submenu {
                 }
             }
         }
-        nav.left-menu + nav.top-menu {
-            left: 160px;
+      nav.left-menu + nav.top-menu {
+        left: 240px;
         }
         nav.left-menu + * + .page-content {
-            margin-left: 160px;
+          margin-left: 240px;
         }
     }
 }
