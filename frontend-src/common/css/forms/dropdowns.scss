@@ -144,7 +144,7 @@
         }
         &:after {
             @include transition-middle();
-            color: $black-lighten-more-more;
+          color: $white;
         }
         &:hover, &:focus, &:active {
             color: $black;

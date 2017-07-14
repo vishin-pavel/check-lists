@@ -206,6 +206,20 @@ nav.top-menu {
                 }
             }
         }
+      .dropdown {
+        a:hover, a:focus {
+          color: $white;
+          border-bottom: 2px solid $label;
+        }
+        .dropdown-menu {
+          a:hover, a:focus {
+            color: $white;
+            text-shadow: inherit;
+            background: inherit;
+            filter: inherit;
+          }
+        }
+      }
         .menu-user-block {
             float: right;
             & + .menu-user-block {
