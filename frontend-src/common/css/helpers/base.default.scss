@@ -158,7 +158,7 @@ pre {
 nav.top-menu {
   height: 80px;
     background: $gray-dark-more;
-  border-bottom: 1px solid $gray-darken;
+  //border-bottom: 1px solid $gray-darken;
     z-index: 110;
   position: fixed;
   top: 0px;
@@ -175,7 +175,7 @@ nav.top-menu {
         background: $gray-dark-more;
     }
     & + .page-content {
-        margin-top: 0px;
+      margin-top: 80px;
     }
     .menu-icon-container {
         font-size: 27px;
@@ -323,6 +323,178 @@ nav.top-menu {
 }
 
 /*
+ * TOP MENU 2
+ */
+nav.top-menu2 {
+  height: 60px;
+  background: $top-menu;
+  //border-bottom: 1px solid $gray-darken;
+  z-index: 110;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 1px;
+    height: 100%;
+    background: $gray-dark-more;
+  }
+  & + .page-content {
+    margin-top: 80px;
+  }
+  .menu-icon-container {
+    font-size: 27px;
+    float: left;
+    margin: 25px 0px 0px 20px;
+  }
+  .menu {
+    height: 60px;
+    padding: 10px 16px;
+    a {
+      display: block;
+      height: 100%;
+      color: $white;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .button {
+      border-right: 1px solid $white;
+      a:hover, a:focus {
+        color: $white;
+        border-bottom: 2px solid $label;
+      }
+      .dropdown-menu {
+        a:hover, a:focus {
+          color: $white;
+          text-shadow: inherit;
+          background: inherit;
+          filter: inherit;
+        }
+      }
+    }
+    .dropdown {
+      a:hover, a:focus {
+        color: $white;
+        border-bottom: 2px solid $label;
+      }
+      .dropdown-menu {
+        a:hover, a:focus {
+          color: $white;
+          text-shadow: inherit;
+          background: inherit;
+          filter: inherit;
+        }
+      }
+    }
+    .menu-user-block {
+      float: right;
+      & + .menu-user-block {
+        margin: 0px 10px 0px 20px;
+      }
+      &.menu-notifications {
+        .menu-notification-icon {
+          display: block;
+          width: 23px;
+          height: 37px;
+          font-size: 18px;
+          line-height: 38px;
+        }
+      }
+    }
+    .menu-language-block {
+      float: left;
+      border-right: 1px solid $white;
+      border-left: 1px solid $white;
+      & + .menu-user-block {
+        margin: 0px 10px 0px 20px;
+      }
+      .dropdown {
+        a:hover, a:focus {
+          color: $white;
+          border-bottom: 2px solid $label;
+        }
+      }
+      .dropdown-toggle {
+        height: 36px;
+        line-height: 40px;
+      }
+      .dropdown-menu {
+        min-width: 80px;
+      }
+    }
+    .menu-info-block {
+      margin-right: 80px;
+      .left {
+        float: left;
+        .header-buttons {
+          margin-top: 9px;
+          @media (max-width: $xs-max-width) {
+            .dropdown-inline-button {
+              padding-right: 0px;
+            }
+          }
+          .button {
+            display: inline-block;
+            height: 36px;
+            line-height: 60px;
+          }
+        }
+      }
+      .right {
+        float: right;
+      }
+    }
+    //@media (max-width: $xl-max-width) { .menu-info-block { margin-left: 24%; } }
+    //@media (max-width: $md-max-width) { .menu-info-block { margin-left: 6%; } }
+
+    .search-block {
+      @include transition-slow();
+      width: 200px;
+      .form-control {
+        min-width: 200px;
+      }
+      &:hover {
+        width: 300px;
+        @include transition-slow();
+        .form-control {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .dropdown-inline-button {
+    padding: 0px 15px;
+  }
+}
+
+.search-block {
+  position: relative;
+  .form-input-icon {
+    > i {
+      margin-top: 9px;
+    }
+  }
+  .search-block-submit {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    height: 38px;
+    width: 38px;
+    background: none;
+    border: none;
+    z-index: 4;
+    cursor: pointer;
+    &:focus, &:active {
+      outline: none !important;
+    }
+  }
+}
+/*
  * LEFT MENU
  */
 
@@ -332,16 +504,19 @@ nav.left-menu {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    width: 240px;
+  width: 290px;
     background: $header;
     outline: none;
     //border-right: 1px solid $gray-darken;
     @include transition-menu();
     & + * + .page-content {
-      margin-left: 240px;
+      margin-left: 290px;
     }
     & + nav.top-menu {
-      left: 240px;
+      left: 290px;
+    }
+  & + nav.top-menu2 {
+    left: 290px;
     }
     .jspScrollable {
         .jspTrack {
@@ -354,7 +529,7 @@ nav.left-menu {
     .logo-container {
       padding: 21px 25px 0px;
         width: 240px;
-      height: 0px;
+      height: 80px;
         float: left;
         position: absolute;
         top: 0px;
@@ -405,24 +580,23 @@ nav.left-menu {
                 }
             }
             &.left-menu-list-opened {
-                background: $gray-lighten;
+              background: $link;
                 > .left-menu-link {
-                    color: $black !important;
+                  color: $white !important;
                     .left-menu-link-icon {
-                        color: $black !important;
+                      color: $white !important;
                     }
                 }
             }
             .left-menu-link {
                 display: block;
                 padding: 10px 25px;
-                font-weight: 600;
                 outline: none;
-                color: $black-lighten-more;
+              color: $white;
                 @include transition-middle();
                 &:hover {
-                    background: $gray-lighten;
-                    color: $black;
+                  background: $label;
+                  color: $white;
                     @include transition-middle();
                     .left-menu-link-icon {
                         color: $black-lighten-more;
@@ -433,7 +607,7 @@ nav.left-menu {
                     display: inline-block;
                     width: 22px;
                     font-size: 1rem;
-                    color: $black-lighten-more-more;
+                  color: $white;
                 }
             }
             .left-menu-item {
@@ -464,7 +638,7 @@ nav.left-menu {
                 .left-menu-list {
                     transition: background 0s;
                     display: none;
-                    background: $gray-lighten;
+                  background: $link;
                     .left-menu-link {
                         font-weight: 400 !important;
                     }
@@ -2207,7 +2381,7 @@ body {
 .cwt {
     &__footer {
         nav.left-menu + * + * + & {
-            margin-left: 256px;
+          margin-left: 290px;
             @media (max-width: $sm-max-width) {
                 margin-left: 16px;
             }
@@ -2248,7 +2422,7 @@ body {
         font-size: 14px;
         //margin-right: 16px;
         //margin-left: 16px;
-        border-radius: 5px 5px 0px 0px;
+      border-radius: 0px 0px 0px 0px;
         &__title {
             text-transform: uppercase;
             margin-bottom: 30px;

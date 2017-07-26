@@ -3,6 +3,15 @@
 /*
  * GLOBAL RESPONSIVE STYLES
  */
+@media (max-width: $xxl-min-width) {
+    nav.left-menu {
+        transform: translateX(-290px);
+        @include transition-menu();
+        & + .main-container {
+            margin-left: 0px;
+        }
+    }
+}
 
 @media (max-width: $sm-max-width) {
     nav.top-menu {
@@ -24,7 +33,7 @@
     }
 
     nav.left-menu {
-        transform: translateX(-240px);
+        transform: translateX(-290px);
         @include transition-menu();
         & + .main-container {
             margin-left: 0px;
