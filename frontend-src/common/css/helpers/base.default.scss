@@ -383,6 +383,9 @@ nav.top-menu2 {
     }
     .menu-language-block {
       float: right;
+      height: 100%;
+      border-left: 1px solid $white;
+      border-right: 1px solid $white;
       & + .menu-user-block {
         margin: 0px 10px 0px 20px;
       }
