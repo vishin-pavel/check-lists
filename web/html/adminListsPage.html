@@ -292,7 +292,7 @@
             <!--<li class="left-menu-list-separator">&lt;!&ndash; &ndash;&gt;</li>-->
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-user2 color-white"><!-- --></i>
+                    <i class="left-menu-link-icon icmn-files-empty2 color-white"><!-- --></i>
                     МОЙ КАБИНЕТ
                 </a>
                 <ul class="left-menu-list list-unstyled">
@@ -315,7 +315,7 @@
             </li>
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-grid5 color-white"><!-- --></i>
+                    <i class="left-menu-link-icon icmn-files-empty2 color-white"><!-- --></i>
                     ПАНЕЛЬ АДМИНИСТРАТОРА
                 </a>
                 <ul class="left-menu-list list-unstyled">
@@ -328,7 +328,7 @@
             </li>
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-copy3 color-white"><!-- --></i>
+                    <i class="left-menu-link-icon icmn-files-empty2 color-white"><!-- --></i>
                     РАБОТА С ЛИСТАМИ
                 </a>
                 <ul class="left-menu-list list-unstyled">
@@ -361,7 +361,7 @@
             </li>
             <li class="left-menu-list-submenu">
                 <a class="left-menu-link" href="javascript: void(0);">
-                    <i class="left-menu-link-icon icmn-headset color-white"><!-- --></i>
+                    <i class="left-menu-link-icon icmn-files-empty2 color-white"><!-- --></i>
                     СПРАВКА
                 </a>
                 <ul class="left-menu-list list-unstyled">
@@ -389,43 +389,43 @@
             </li>
 
             <!-- remove "horizontal-left-direction" class, for get submenu with right direction (horizontal menu option) -->
-                <script>
-                    $(function () {
-                        // CSS STYLING & ANIMATIONS
-                        var cssAnimationData = {
-                                labels: ["S", "M", "T", "W", "T", "F", "S"],
-                                series: [
-                                    [11, 14, 24, 16, 20, 16, 24]
-                                ]
+            <script>
+                $(function () {
+                    // CSS STYLING & ANIMATIONS
+                    var cssAnimationData = {
+                            labels: ["S", "M", "T", "W", "T", "F", "S"],
+                            series: [
+                                [11, 14, 24, 16, 20, 16, 24]
+                            ]
+                        },
+                        cssAnimationOptions = {
+                            fullWidth: !0,
+                            chartPadding: {
+                                right: 2,
+                                left: 30
                             },
-                            cssAnimationOptions = {
-                                fullWidth: !0,
-                                chartPadding: {
-                                    right: 2,
-                                    left: 30
-                                },
-                                axisY: {
-                                    position: 'end'
-                                }
-                            },
-                            cssAnimationResponsiveOptions = [
-                                [{
-                                    axisX: {
-                                        labelInterpolationFnc: function (value, index) {
-                                            return index % 2 !== 0 ? !1 : value
-                                        }
+                            axisY: {
+                                position: 'end'
+                            }
+                        },
+                        cssAnimationResponsiveOptions = [
+                            [{
+                                axisX: {
+                                    labelInterpolationFnc: function (value, index) {
+                                        return index % 2 !== 0 ? !1 : value
                                     }
-                                }]
-                            ];
+                                }
+                            }]
+                        ];
 
-                        new Chartist.Line(".example-left-menu-chart", cssAnimationData, cssAnimationOptions, cssAnimationResponsiveOptions);
+                    new Chartist.Line(".example-left-menu-chart", cssAnimationData, cssAnimationOptions, cssAnimationResponsiveOptions);
 
-                    });
-                </script>
+                });
+            </script>
         </ul>
     </div>
 </nav>
-<nav class="top-menu">
+<nav class="top-menu2">
     <div class="menu-icon-container">
         <div class="animate-menu-button left-menu-toggle">
             <div><!-- --></div>
@@ -433,50 +433,51 @@
     </div>
     <div class="menu">
         <div class="menu-info-block">
-            <div class="left">
-                <div class="header-buttons">
-                    <div class="dropdown">
-                        <a href="javascript: void(0);" class="">
-                            <i class="icmn-home6"></i>
-                            <span class="hidden-lg-down">Главная</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div>
-                    <div class="dropdown">
-                        <a href="javascript: void(0);" class="">
-                            <i class="icmn-files-empty"></i>
-                            <span class="hidden-lg-down">Работа с листами</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div>
-                    <div class="dropdown">
-                        <a href="javascript: void(0);" class="">
-                            <i class="icmn-book2"></i>
-                            <span class="hidden-lg-down">Все о проверочных листах</span>
-                            <span class="caret"></span>
-                        </a>
-                    </div>
-                    <div class="dropdown">
-                        <a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button"
-                           data-toggle="dropdown" aria-expanded="false">
-                            <i class="dropdown-inline-button-icon icmn-user2 color-white"></i>
-                            <span class="hidden-lg-down">Личный кабинет</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i>
-                                Профиль</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Мои листы</a>
-                            <a class="dropdown-item" href="javascript:void(0)"><i
-                                    class="dropdown-icon icmn-circle-right"></i> Сообщения</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>
-                                Выход</a>
-                        </ul>
-                    </div>
-                </div>
+            <div class="left margin-left-5">
+                <h4 class="color-white margin-bottom-5 margin-top-10">ПОИСК ПРОВЕРОЧНОГО ЛИСТА</h4>
+                <!--<div class="header-buttons">-->
+                <!--<div class="dropdown">-->
+                <!--<a href="javascript: void(0);" class="">-->
+                <!--<i class="icmn-home6"></i>-->
+                <!--<span class="hidden-lg-down">Главная</span>-->
+                <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="dropdown">-->
+                <!--<a href="javascript: void(0);" class="">-->
+                <!--<i class="icmn-files-empty"></i>-->
+                <!--<span class="hidden-lg-down">Работа с листами</span>-->
+                <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="dropdown">-->
+                <!--<a href="javascript: void(0);" class="">-->
+                <!--<i class="icmn-book2"></i>-->
+                <!--<span class="hidden-lg-down">Все о проверочных листах</span>-->
+                <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="dropdown">-->
+                <!--<a href="javascript: void(0);" class="dropdown-toggle dropdown-inline-button"-->
+                <!--data-toggle="dropdown" aria-expanded="false">-->
+                <!--<i class="dropdown-inline-button-icon icmn-user2 color-white"></i>-->
+                <!--<span class="hidden-lg-down">Личный кабинет</span>-->
+                <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu dropdown-menu-left" aria-labelledby="" role="menu">-->
+                <!--<a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i>-->
+                <!--Профиль</a>-->
+                <!--<div class="dropdown-divider"></div>-->
+                <!--<a class="dropdown-item" href="javascript:void(0)"><i-->
+                <!--class="dropdown-icon icmn-circle-right"></i> Мои листы</a>-->
+                <!--<a class="dropdown-item" href="javascript:void(0)"><i-->
+                <!--class="dropdown-icon icmn-circle-right"></i> Сообщения</a>-->
+                <!--<div class="dropdown-divider"></div>-->
+                <!--<a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>-->
+                <!--Выход</a>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
             </div>
             <div class="right example-buy-btn hidden-xs-down">
                 <div class="menu-language-block">
@@ -498,8 +499,6 @@
             </div>
         </div>
 </nav>
-
-
 <section class="page-content placeholder-list-page">
     <section class="page-content-inner">
         <div class="panel-alternative background-white">
@@ -775,11 +774,6 @@
         </div>
     </section>
 </section>
-
-
-<!-- Page Scripts -->
-
-<!-- End Page Scripts-->
 <div class="cwt__footer visible-footer">
     <div class="cwt__footer__bottom">
         <div class="row">
@@ -791,6 +785,7 @@
         </div>
     </div>
 </div>
+<!-- Page Scripts -->
 <script>
     $(function () {
 
@@ -804,7 +799,7 @@
 
     })
 </script>
-<!--<div class="main-backdrop">&lt;!&ndash; &ndash;&gt;</div>-->
+<!-- End Page Scripts-->
 </div>
 </div>
 </body>

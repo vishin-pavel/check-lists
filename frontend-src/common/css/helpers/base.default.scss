@@ -302,8 +302,8 @@ nav.top-menu {
 * TOP MENU2
  */
 nav.top-menu2 {
-  height: 80px;
-  background: $gray-dark-more;
+  height: 60px;
+  background: $black;
   //border-bottom: 1px solid $gray-darken;
   z-index: 110;
   position: fixed;
@@ -326,11 +326,11 @@ nav.top-menu2 {
   .menu-icon-container {
     font-size: 27px;
     float: left;
-    margin: 25px 0px 0px 20px;
+    margin: 15px 0px 0px 20px;
   }
   .menu {
-    height: 80px;
-    padding: 21px 16px;
+    height: 60px;
+    padding: 10px 0px;
     a {
       display: block;
       height: 100%;
@@ -393,7 +393,7 @@ nav.top-menu2 {
         }
       }
       .dropdown-toggle {
-        height: 20px;
+        height: 30px;
         line-height: 40px;
       }
       .dropdown-menu {
@@ -530,7 +530,7 @@ nav.left-menu {
     position: absolute;
     top: 0px;
     left: 0px;
-    //border-bottom: 1px solid $gray-darken;
+    border-bottom: 1px solid $gray-darken;
     .logo {
       display: block;
       max-width: 150px;
@@ -556,7 +556,7 @@ nav.left-menu {
     outline: none !important;
   }
   .left-menu-list-root {
-    margin: 15px 0px;
+    //margin: 15px 0px;
   }
   .left-menu-list {
     li {
@@ -710,9 +710,9 @@ nav.left-menu-showed {
     font-size: 80%;
   }
   .logo-container {
-    padding: 21px 25px 0px;
-    width: 240px;
-    height: 80px;
+    padding: 13px 44px 20px;
+    width: 290px;
+    height: 60px;
     float: left;
     position: absolute;
     top: 0px;
@@ -743,7 +743,7 @@ nav.left-menu-showed {
     outline: none !important;
   }
   .left-menu-list-root {
-    margin: 15px 0px;
+    //margin: 15px 0px;
   }
   .left-menu-list {
     li {
@@ -1541,6 +1541,7 @@ nav.left-menu {
     font-size: 0;
     text-indent: -9999px;
     outline: none;
+  cursor: pointer;
     div {
         margin: -1px 4px 0;
         position: absolute;
