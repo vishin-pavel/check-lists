@@ -56,7 +56,7 @@
         }
         &:hover, &:active, &:focus {
             @include transition-slow();
-            background: none;
+          background: $label;
             color: $blue;
         }
     }
@@ -99,6 +99,7 @@
         animation-fill-mode: both;
         animation-delay: .05s;
         display: block;
+      background-color: $top-menu;
     }
     &.dropup {
         > .dropdown-menu {
@@ -123,12 +124,12 @@
                 right: 0px;
                 top: 50%;
                 margin-top: -1px;
-                color: $black-lighten-more-more;
+              color: $white;
                 @include transition-middle();
             }
             &:hover {
                 &:after {
-                    color: $black-lighten-more;
+                  color: $white;
                 }
             }
         }

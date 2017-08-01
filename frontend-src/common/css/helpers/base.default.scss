@@ -303,7 +303,7 @@ nav.top-menu {
  */
 nav.top-menu2 {
   height: 60px;
-  background: $black;
+  background: $top-menu;
   //border-bottom: 1px solid $gray-darken;
   z-index: 110;
   position: fixed;
@@ -326,11 +326,11 @@ nav.top-menu2 {
   .menu-icon-container {
     font-size: 27px;
     float: left;
-    margin: 15px 0px 0px 20px;
+    margin: 16px 0px 0px 20px;
   }
   .menu {
     height: 60px;
-    padding: 10px 0px;
+    padding: 11px 16px;
     a {
       display: block;
       height: 100%;
@@ -341,7 +341,7 @@ nav.top-menu2 {
     .button {
       a:hover, a:focus {
         color: $white;
-        border-bottom: 2px solid $label;
+        //border-bottom: 2px solid $label;
       }
       .dropdown-menu {
         a:hover, a:focus {
@@ -355,13 +355,13 @@ nav.top-menu2 {
     .dropdown {
       a:hover, a:focus {
         color: $white;
-        border-bottom: 2px solid $label;
+        //border-bottom: 2px solid $label;
       }
       .dropdown-menu {
         a:hover, a:focus {
           color: $white;
           text-shadow: inherit;
-          background: inherit;
+          //background: inherit;
           filter: inherit;
         }
       }
@@ -383,24 +383,32 @@ nav.top-menu2 {
     }
     .menu-language-block {
       float: right;
-      height: 100%;
-      border-left: 1px solid $white;
-      border-right: 1px solid $white;
+      height: 40px;
       & + .menu-user-block {
         margin: 0px 10px 0px 20px;
+      }
+      .service-button {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        border-left: 1px solid $white;
+        a:hover, a:focus {
+          color: $label
+        }
       }
       .dropdown {
         a:hover, a:focus {
           color: $white;
-          border-bottom: 2px solid $label;
+          //border-bottom: 2px solid $label;
         }
       }
       .dropdown-toggle {
-        height: 30px;
+        height: 40px;
         line-height: 40px;
       }
       .dropdown-menu {
         min-width: 80px;
+        background-color: $top-menu;
       }
     }
     .menu-info-block {
@@ -498,12 +506,12 @@ nav.top-menu2 {
  */
 
 nav.left-menu {
-    position: fixed;
+  //position: fixed;
     z-index: 100;
     top: 0px;
     bottom: 0px;
     left: 0px;
-  width: 290px;
+  //width: 290px;
     background: $header;
     outline: none;
     //border-right: 1px solid $gray-darken;
@@ -533,7 +541,7 @@ nav.left-menu {
     position: absolute;
     top: 0px;
     left: 0px;
-    border-bottom: 1px solid $gray-darken;
+    //border-bottom: 1px solid $gray-darken;
     .logo {
       display: block;
       max-width: 150px;
@@ -559,7 +567,7 @@ nav.left-menu {
     outline: none !important;
   }
   .left-menu-list-root {
-    //margin: 15px 0px;
+    margin: 15px 0px;
   }
   .left-menu-list {
     li {
@@ -685,24 +693,24 @@ nav.left-menu {
 }
 
 nav.left-menu-showed {
-  position: fixed;
+  //position: fixed;
   z-index: 100;
   top: 0px;
   bottom: 0px;
   left: 0px;
-  width: 290px;
+  width: 240px;
   background: $header;
   outline: none;
   //border-right: 1px solid $gray-darken;
   @include transition-menu();
   & + * + .page-content {
-    margin-left: 290px;
+    //margin-left: 290px;
   }
   & + nav.top-menu {
     left: 290px;
   }
   & + nav.top-menu2 {
-    left: 290px;
+    left: 240px;
   }
   .jspScrollable {
     .jspTrack {
@@ -713,14 +721,14 @@ nav.left-menu-showed {
     font-size: 80%;
   }
   .logo-container {
-    padding: 13px 44px 20px;
-    width: 290px;
+    //padding: 16px 48px 0px;
+    width: 240px;
     height: 60px;
     float: left;
     position: absolute;
     top: 0px;
     left: 0px;
-    //border-bottom: 1px solid $gray-darken;
+    background-color: $top-menu;
     .logo {
       display: block;
       max-width: 150px;
@@ -746,7 +754,7 @@ nav.left-menu-showed {
     outline: none !important;
   }
   .left-menu-list-root {
-    //margin: 15px 0px;
+    margin: 15px 0px;
   }
   .left-menu-list {
     li {
@@ -861,7 +869,7 @@ nav.left-menu-showed {
     }
   }
   &.left-menu-showed {
-    transform: translateX(0px);
+    //transform: translateX(0px);
   }
   .left-menu-block {
     .left-menu-block-item {
@@ -2567,7 +2575,7 @@ body {
 .cwt {
     &__footer {
       nav.left-menu-showed + * + * + & {
-          margin-left: 290px;
+        //margin-left: 290px;
             @media (max-width: $sm-max-width) {
                 margin-left: 16px;
             }
