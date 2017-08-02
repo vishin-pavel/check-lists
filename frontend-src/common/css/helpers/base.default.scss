@@ -6,7 +6,7 @@
 
 html {
     font-size: 14px;
-    height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -710,7 +710,7 @@ nav.left-menu-showed {
     left: 290px;
   }
   & + nav.top-menu2 {
-    left: 240px;
+    margin-left: 240px;
   }
   .jspScrollable {
     .jspTrack {
@@ -1730,9 +1730,9 @@ nav.top-submenu, .top-submenu {
     .page-content {
         margin-top: 0px !important;
     }
-    nav.top-menu {
+  nav.top-menu2 {
         position: relative;
-        left: 0px !important;
+    //left: 240px !important;
     }
     nav.left-menu {
         & + nav.top-menu {

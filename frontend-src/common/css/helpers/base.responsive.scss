@@ -4,10 +4,16 @@
  * GLOBAL RESPONSIVE STYLES
  */
 
-
+@media (max-width: $sm-max-width) {
+    nav.left-menu-showed {
+        .logo-container {
+            width: 70px;
+        }
+    }
+}
 @media (max-width: $sm-max-width) {
     nav.top-menu2 {
-        //left: 0px !important;
+        margin-left: 70px !important;
         .menu {
             padding: 11px 16px;
         }
