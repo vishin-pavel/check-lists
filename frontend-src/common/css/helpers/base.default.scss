@@ -1730,10 +1730,14 @@ nav.top-submenu, .top-submenu {
     .page-content {
         margin-top: 0px !important;
     }
-  nav.top-menu2 {
+  nav.top-menu {
         position: relative;
     //left: 240px !important;
     }
+  nav.top-menu2 {
+    position: relative;
+    //left: 240px !important;
+  }
     nav.left-menu {
         & + nav.top-menu {
             margin-left: 240px;
@@ -2608,7 +2612,6 @@ body {
         &.visible-footer {
             display: block;
         }
-
         display: none;
       background: $table;
       color: $top-menu;
