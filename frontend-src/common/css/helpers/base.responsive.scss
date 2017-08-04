@@ -4,14 +4,15 @@
  * GLOBAL RESPONSIVE STYLES
  */
 
-@media (max-width: $sm-max-width) {
+@media (max-width: $md-max-width) {
     nav.left-menu-showed {
         .logo-container {
             width: 70px;
         }
     }
 }
-@media (max-width: $sm-max-width) {
+
+@media (max-width: $md-max-width) {
     nav.top-menu2 {
         margin-left: 70px !important;
         .menu {

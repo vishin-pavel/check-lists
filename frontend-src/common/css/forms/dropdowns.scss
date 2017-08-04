@@ -32,15 +32,15 @@
         font-weight: 600;
     }
     .dropdown-item {
-        color: $black-lighten-more;
+      color: $white;
         background: none;
         padding: 3px 15px;
         @include transition-slow();
         a {
-            color: $black-lighten-more;
+          color: $white;
             &:hover, &:active {
               background: none;
-              color: $blue;
+              color: $white;
             }
         }
         &.disabled {
@@ -57,7 +57,7 @@
         &:hover, &:active, &:focus {
             @include transition-slow();
           background: $label;
-            color: $blue;
+          color: $white;
         }
     }
 }

@@ -5,6 +5,7 @@
  */
 
 html {
+  position: relative;
     font-size: 14px;
   min-height: 100%;
 }
@@ -14,6 +15,7 @@ body {
     background: $white;
     color: $black-lighten;
     overflow-x: hidden;
+  margin-bottom: 100px;
 }
 
 a {
@@ -2612,6 +2614,10 @@ body {
         &.visible-footer {
             display: block;
         }
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
         display: none;
       background: $table;
       color: $top-menu;
@@ -2639,8 +2645,7 @@ body {
             }
         }
         &__bottom {
-            margin-top: 30px;
-            padding-top: 10px;//40px;
+          padding-top: 5px; //40px;
             /*border-top: 1px solid rgba($black-lighten-more-more, .2);*/
         }
         &__company {
