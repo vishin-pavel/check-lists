@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Вход</title>
+    <title>Мои листы</title>
 
     <link href="../assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
     <link href="../assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
     <link href="../assets/common/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
     <link href="../assets/common/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
     <link href="../assets/common/img/favicon.png" rel="icon" type="image/png">
-    <link href="favicon.ico" rel="shortcut icon">
+    <link href="../../frontend-src/vendors/bower/datatables/media/images/favicon.ico" rel="shortcut icon">
 
     <!-- HTML5 shim and Respond.js for < IE9 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,6 +47,7 @@
 
     <!-- Clean UI Styles -->
     <link rel="stylesheet" type="text/css" href="../assets/common/css/main.css">
+    <link rel="stylesheet" href="../assets/common/css/helpers/fonts.css">
 
     <!-- Vendors Scripts -->
     <!-- v1.0.0 -->
@@ -101,7 +102,9 @@
     <!-- Clean UI Scripts -->
     <script src="../assets/common/js/common.js"></script>
     <script src="../assets/common/js/demo.temp.js"></script>
+    <script src="../assets/common/js/helper.js"></script>
 </head>
+<body class="menu-static">
 <body class="theme-default menu-static background-light-blue">
 <div class="header">
     <div class="container">
@@ -197,54 +200,51 @@
 <section class="page-content">
     <div class="page-content-inner single-page-login-alpha">
         <div class="single-page-block margin-top-50">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="single-page-block-inner">
-                        <div class="single-page-block-form">
-                            <form id="form-validation" name="form-validation" method="POST">
-                                <div class="form-group">
-                                    <h1 class="font-size-26 text-center">
-                                        <small>ВХОД В ЛИЧНЫЙ КАБИНЕТ</small>
-                                    </h1>
-                                    <label class="form-label">Логин</label>
-                                    <input id="validation-email"
-                                           class="form-control color-black"
-                                           placeholder="Email или логин"
-                                           name="validation[email]"
-                                           type="text"
-                                           data-validation="[EMAIL]"
-                                           data-validation-message="Некорректный email">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Пароль</label>
-                                    <input id="validation-password"
-                                           class="form-control password color-black"
-                                           name="validation[password]"
-                                           type="password" data-validation="[L>=6]"
-                                           data-validation-message="Пароль должен быть длинее 6 символов"
-                                           placeholder="********">
-                                </div>
-                                <div class="form-group">
-                                    <a href="javascript: void(0);" class="pull-right link-blue link-underlined">Забыли
-                                        пароль?</a>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" name="example6" checked>
-                                            Запомнить меня
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-actions">
-                                    <button type="submit" class="btn btn-primary width-150" href="javascript: void(0);">
-                                        Войти
-                                    </button>
-                                    <span class="register-link">
-                                        или <a href="" class="link-blue link-underlined margin-left-10">зарегистрироваться</a>
-                                    </span>
-                                </div>
-                            </form>
+            <div class="single-page-block-inner effect-3d-element">
+                <div class="single-page-block-form">
+                    <form id="form-validation" name="form-validation" method="POST">
+                        <div class="form-group">
+                            <h1 class="text-center font-size-26">
+                                <small><i class="icmn-users margin-right-10"></i>
+                                    Регистрация
+                                </small>
+                            </h1>
+                            <label class="form-label">Логин</label>
+                            <input id="validation-email"
+                                   class="form-control color-black"
+                                   placeholder="Email или логин"
+                                   name="validation[email]"
+                                   type="text"
+                                   data-validation="[EMAIL]"
+                                   data-validation-message="Некорректный email">
                         </div>
-                    </div>
+                        <div class="form-group color-black">
+                            <label class="form-label">Пароль</label>
+                            <input id="validation-password"
+                                   class="form-control password color-black"
+                                   name="validation[password]"
+                                   type="password" data-validation="[L>=6]"
+                                   data-validation-message="Пароль должен быть длинее 6 символов"
+                                   placeholder="********">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="validation-password-confirm">Повторите пароль</label>
+                            <input id="validation-password-confirm" class="form-control"
+                                   name="validation[password-confirm]" type="password"
+                                   data-validation="[V==validation[password]]"
+                                   data-validation-message="$ does not match the password"
+                                   placeholder="********">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary width-200">Зарегистрироваться</button>
+                            <div class="checkbox margin-left-10">
+                                <label>
+                                    <input type="checkbox" name="example6" checked>
+                                    Почтовая рассылка
+                                </label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -257,14 +257,13 @@
             </ul>
         </div>
         <!-- End Login Alpha Page -->
+
     </div>
 
     <!-- Page Scripts -->
     <script>
-        $(function () {
 
-            // Add class to body for change layout settings
-            $('body').addClass('single-page');
+        $(function () {
 
             // Form Validation
             $('#form-validation').validate({
@@ -277,19 +276,59 @@
                 }
             });
 
-            // Show/Hide Password
-            $('.password').password({
-                eyeClass: '',
-                eyeOpenClass: 'icmn-eye',
-                eyeCloseClass: 'icmn-eye-blocked'
+            // Add class to body for change layout settings
+            $('body').addClass('single-page');
+
+            // Set Background Image for Form Block
+            function setImage() {
+                var imgUrl = $('.page-content-inner').css('background-image');
+
+                $('.blur-placeholder').css('background-image', imgUrl);
+            };
+
+            function changeImgPositon() {
+                var width = $(window).width(),
+                    height = $(window).height(),
+                    left = -(width - $('.single-page-block-inner').outerWidth()) / 2,
+                    top = -(height - $('.single-page-block-inner').outerHeight()) / 2;
+
+
+                $('.blur-placeholder').css({
+                    width: width,
+                    height: height,
+                    left: left,
+                    top: top
+                });
+            };
+
+            setImage();
+            changeImgPositon();
+
+            $(window).on('resize', function () {
+                changeImgPositon();
             });
 
+            // Mouse Move 3d Effect
+            var rotation = function (e) {
+                var perX = (e.clientX / $(window).width()) - 0.5;
+                var perY = (e.clientY / $(window).height()) - 0.5;
+                TweenMax.to(".effect-3d-element", 0.4, {
+                    rotationY: 15 * perX,
+                    rotationX: 15 * perY,
+                    ease: Linear.easeNone,
+                    transformPerspective: 1000,
+                    transformOrigin: "center"
+                })
+            };
+
+            if (!cleanUI.hasTouch) {
+                $('body').mousemove(rotation);
+            }
+
         });
+
     </script>
     <!-- End Page Scripts -->
 </section>
-
-<div class="main-backdrop"><!-- --></div>
-
 </body>
 </html>

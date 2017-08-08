@@ -104,7 +104,265 @@
     <script src="../assets/common/js/demo.temp.js"></script>
     <script src="../assets/common/js/helper.js"></script>
 </head>
-<body>
+<body class="theme-default menu-static background-light-blue">
+<nav class="left-menu-showed" left-menu>
+    <div class="logo-container">
+        <a href="HomePage.html">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-3 margin-top-10 text-center">
+                        <i class="icmn-checkmark3 icons color-white font-size-40"></i>
+                    </div>
+                    <div class="col-md-9 col-xs-9 margin-top-10">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="color-white margin-top-0 margin-bottom-0 hidden-md-down">
+                                    <span class="color-label">#</span>ПРОВЕРОЧНЫЕ
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="color-white margin-top-0 margin-bottom-0 hidden-md-down">
+                                    <span class="color-label">#</span>ЛИСТЫ
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</nav>
+<nav class="top-menu2">
+    <div class="menu">
+        <div class="menu-info-block">
+            <div class="left hidden-sm-down margin-left-5">
+                <h4 class="color-white margin-bottom-5 margin-top-10">ПРОФИЛЬ</h4>
+            </div>
+        </div>
+        <div class="menu-user-block">
+            <div class="dropdown dropdown-avatar">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="avatar" href="javascript:void(0);">
+                        <img src="../assets/common/img/temp/avatars/1.jpg" alt="Alternative text to the image">
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i
+                            class="dropdown-icon icmn-user"></i>Профиль</a>
+                    <div class="dropdown-divider"></div>
+                    <!--<div class="dropdown-header">Home</div>-->
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-archive"></i>Библиотека
+                        проверочных листов</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-file-check"></i>Мои
+                        листы</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-cog3"></i>Настройка</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i>Выйти</a>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-user-block menu-notifications">
+            <div class="dropdown dropdown-avatar">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="menu-notification-icon icmn-headset"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i
+                            class="dropdown-icon icmn-question3"></i>FAQ</a>
+                    <div class="dropdown-divider"></div>
+                    <!--<div class="dropdown-header">Home</div>-->
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-lamp8"></i>С чего
+                        начать?</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-clipboard3"></i>Инструкция</a>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-book"></i>Документация</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-wrench2"></i>Техническая
+                        поддрежка</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="page-content margin-top-50">
+    <div class="page-content-inner">
+        <div class="panel-alternative background-white">
+            <div class="panel-heading">
 
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label class="form-control-label" for="1">Ваш ник</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel-group accordion accordion-margin-bottom" id="accordion2" role="tablist"
+                             aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading collapsed" role="tab" id="headingTwo2" data-toggle="collapse"
+                                     data-parent="#accordion2" data-target="#collapseTwo2" aria-expanded="false"
+                                     aria-controls="collapseTwo2">
+                                    <div class="panel-title">
+                                    <span class="accordion-indicator pull-right">
+                                            <i class="plus">Изменить</i>
+                                            <i class="minus">Отменить</i>
+                                    </span>
+                                        <span>Обнавлен 3 месяца назад</span>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingTwo2" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <form id="form-validation" name="form-validation" method="POST"
+                                              class="ng-pristine ng-valid">
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password">Старый
+                                                    пароль</label>
+                                                <input id="validation-password" class="form-control"
+                                                       name="validation[password]" type="password"
+                                                       data-validation="[L>=6]"
+                                                       data-validation-message="$ must be at least 6 characters">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password">Новый пароль</label>
+                                                <input id="validation-password" class="form-control"
+                                                       name="validation[password]" type="password"
+                                                       data-validation="[L>=6]"
+                                                       data-validation-message="$ must be at least 6 characters">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password-confirm">Повторить
+                                                    пароль</label>
+                                                <input id="validation-password-confirm" class="form-control"
+                                                       name="validation[password-confirm]" type="password"
+                                                       data-validation="[V==validation[password]]"
+                                                       data-validation-message="$ does not match the password">
+                                            </div>
+                                            <div class="form-actions">
+                                                <button type="submit" class="btn btn-primary width-150">Сохранить
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-20">
+                    <div class="col-md-2">
+                        <label class="form-control-label" for="2">Ваш email</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="icmn-mail2"></i>
+                                        </span>
+                            <input type="email" class="form-control" placeholder="Email Address" id="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-20">
+                    <div class="col-md-2">
+                        <label class="form-control-label" for="1">Пароль</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel-group accordion accordion-margin-bottom" id="accordion2" role="tablist"
+                             aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading collapsed" role="tab" id="headingOne2" data-toggle="collapse"
+                                     data-parent="#accordion2" data-target="#collapseOne2" aria-expanded="false"
+                                     aria-controls="collapseOne2">
+                                    <div class="panel-title">
+                                    <span class="accordion-indicator pull-right">
+                                            <i class="plus">Изменить</i>
+                                            <i class="minus">Отменить</i>
+                                    </span>
+                                        <span>Обнавлен 3 месяца назад</span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingOne2" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <form id="form-validation" name="form-validation" method="POST"
+                                              class="ng-pristine ng-valid">
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password">Старый
+                                                    пароль</label>
+                                                <input id="validation-password" class="form-control"
+                                                       name="validation[password]" type="password"
+                                                       data-validation="[L>=6]"
+                                                       data-validation-message="$ must be at least 6 characters">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password">Новый пароль</label>
+                                                <input id="validation-password" class="form-control"
+                                                       name="validation[password]" type="password"
+                                                       data-validation="[L>=6]"
+                                                       data-validation-message="$ must be at least 6 characters">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-password-confirm">Повторить
+                                                    пароль</label>
+                                                <input id="validation-password-confirm" class="form-control"
+                                                       name="validation[password-confirm]" type="password"
+                                                       data-validation="[V==validation[password]]"
+                                                       data-validation-message="$ does not match the password">
+                                            </div>
+                                            <div class="form-actions">
+                                                <button type="submit" class="btn btn-primary width-150">Сохранить
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="cwt__footer visible-footer">
+    <div class="cwt__footer__bottom">
+        <div class="row">
+            <div class="col-md-4">
+                © 2017, <a href="http://mediatec.org/" class="cwt__footer__link" target="_blank">Портал "Проверочные
+                листы"</a>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </div>
+</div>
+<!-- Page Scripts -->
+<script>
+    $(function () {
+
+        $('#form-validation').validate({
+            submit: {
+                settings: {
+                    inputContainer: '.form-group',
+                    errorListClass: 'form-control-error',
+                    errorClass: 'has-danger'
+                }
+            }
+        });
+
+
+        $('.select2').select2();
+        $('.select2-tags').select2({
+            tags: true,
+            tokenSeparators: [',', ' ']
+        });
+
+    });
+</script>
+
+<!-- End Page Scripts-->
+
+
+<!--<div class="main-backdrop">&lt;!&ndash; &ndash;&gt;</div>-->
 </body>
 </html>

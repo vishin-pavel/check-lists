@@ -30,19 +30,11 @@
   font-stretch: condensed;
 }
 
-.placeholder-list-page input[type="text"]::-webkit-input-placeholder {
-  color: #000000;
-}
-
-.placeholder-list-page input[type="text"]::-moz-placeholder {
-  color: #000000;
-}
-
-input[type="text"]::-webkit-input-placeholder {
+.placeholder-white input[type="text"]::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-input[type="text"]::-moz-placeholder {
+.placeholder-white input[type="text"]::-moz-placeholder {
   color: #ffffff;
 }
 

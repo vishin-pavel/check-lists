@@ -2583,7 +2583,7 @@ body {
       nav.left-menu-showed + * + * + & {
         //margin-left: 290px;
             @media (max-width: $sm-max-width) {
-                margin-left: 16px;
+              //margin-left: 16px;
             }
             body.mode-superclean & {
                 margin-left: 240px;
