@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Мои листы</title>
+    <title>Профиль</title>
 
     <link href="../assets/common/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
     <link href="../assets/common/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -194,7 +194,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-2">
-                        <label class="form-control-label" for="1">Ваш ник</label>
+                        <label class="form-control-label">Ваш никнейм</label>
                     </div>
                     <div class="col-md-6">
                         <div class="panel-group accordion accordion-margin-bottom" id="accordion2" role="tablist"
@@ -208,7 +208,7 @@
                                             <i class="plus">Изменить</i>
                                             <i class="minus">Отменить</i>
                                     </span>
-                                        <span>Обнавлен 3 месяца назад</span>
+                                        <span>TomHardy</span>
                                     </div>
                                 </div>
                                 <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel"
@@ -217,27 +217,14 @@
                                         <form id="form-validation" name="form-validation" method="POST"
                                               class="ng-pristine ng-valid">
                                             <div class="form-group">
-                                                <label class="form-label" for="validation-password">Старый
-                                                    пароль</label>
-                                                <input id="validation-password" class="form-control"
-                                                       name="validation[password]" type="password"
-                                                       data-validation="[L>=6]"
-                                                       data-validation-message="$ must be at least 6 characters">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label" for="validation-password">Новый пароль</label>
-                                                <input id="validation-password" class="form-control"
-                                                       name="validation[password]" type="password"
-                                                       data-validation="[L>=6]"
-                                                       data-validation-message="$ must be at least 6 characters">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label" for="validation-password-confirm">Повторить
-                                                    пароль</label>
-                                                <input id="validation-password-confirm" class="form-control"
-                                                       name="validation[password-confirm]" type="password"
-                                                       data-validation="[V==validation[password]]"
-                                                       data-validation-message="$ does not match the password">
+                                                <label class="form-label" for="validation-username">Изменить
+                                                    никнейм</label>
+                                                <input id="validation-username" class="form-control"
+                                                       name="validation[username]" type="text"
+                                                       data-validation="[L>=6, L<=18, MIXED]"
+                                                       data-validation-message="$ must be between 6 and 18 characters. No special characters allowed."
+                                                       data-validation-regex="/^((?!admin).)*$/i"
+                                                       data-validation-regex-message="The word &quot;Admin&quot; is not allowed in the $">
                                             </div>
                                             <div class="form-actions">
                                                 <button type="submit" class="btn btn-primary width-150">Сохранить
@@ -252,20 +239,48 @@
                 </div>
                 <div class="row margin-top-20">
                     <div class="col-md-2">
-                        <label class="form-control-label" for="2">Ваш email</label>
+                        <label class="form-control-label">Ваш email</label>
                     </div>
                     <div class="col-md-6">
-                        <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="icmn-mail2"></i>
-                                        </span>
-                            <input type="email" class="form-control" placeholder="Email Address" id="2">
+                        <div class="panel-group accordion accordion-margin-bottom" id="accordion3" role="tablist"
+                             aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading collapsed" role="tab" id="headingThree2"
+                                     data-toggle="collapse"
+                                     data-parent="#accordion3" data-target="#collapseThree2" aria-expanded="false"
+                                     aria-controls="collapseThree2">
+                                    <div class="panel-title">
+                                    <span class="accordion-indicator pull-right">
+                                            <i class="plus">Изменить</i>
+                                            <i class="minus">Отменить</i>
+                                    </span>
+                                        <span>TomHardy</span>
+                                    </div>
+                                </div>
+                                <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingThree2" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <form id="form-validation2" name="form-validation" method="POST"
+                                              class="ng-pristine ng-valid">
+                                            <div class="form-group">
+                                                <label class="form-label" for="validation-email">Email</label>
+                                                <input id="validation-email" class="form-control"
+                                                       name="validation[email]" type="text" data-validation="[EMAIL]">
+                                            </div>
+                                            <div class="form-actions">
+                                                <button type="submit" class="btn btn-primary width-150">Сохранить
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row margin-top-20">
                     <div class="col-md-2">
-                        <label class="form-control-label" for="1">Пароль</label>
+                        <label class="form-control-label">Пароль</label>
                     </div>
                     <div class="col-md-6">
                         <div class="panel-group accordion accordion-margin-bottom" id="accordion2" role="tablist"
@@ -285,7 +300,7 @@
                                 <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel"
                                      aria-labelledby="headingOne2" aria-expanded="false" style="height: 0px;">
                                     <div class="panel-body">
-                                        <form id="form-validation" name="form-validation" method="POST"
+                                        <form id="form-validation3" name="form-validation" method="POST"
                                               class="ng-pristine ng-valid">
                                             <div class="form-group">
                                                 <label class="form-label" for="validation-password">Старый
@@ -319,6 +334,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row margin-top-20">
+                    <div class="col-md-3 col-md-offset-4">
+                        <button type="button" class="btn btn-danger">Удалить аккаунт</button>
                     </div>
                 </div>
             </div>
@@ -340,7 +360,7 @@
 <script>
     $(function () {
 
-        $('#form-validation').validate({
+        $('#form-validation, #form-validation2, #form-validation3').validate({
             submit: {
                 settings: {
                     inputContainer: '.form-group',

@@ -107,3 +107,37 @@
   background-color: #f5f5f5;
 }
 
+.question button {
+  color: white;
+  cursor: pointer;
+}
+
+.question:hover button {
+  color: #607d8b;
+}
+
+.question a:hover {
+  color: red;
+}
+
+.question a:active {
+  color: red;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 40px; /*Размер вашей кнопки или чекбокса*/
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: red left top no-repeat;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: green -19px top no-repeat;
+}

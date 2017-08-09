@@ -362,12 +362,9 @@
                                                 транспортной инфраструктуры
                                             </td>
                                             <td class="answer-text"><p class="text-center">п.3.2</p></td>
-                                            <td class="answer-text"><input type="radio" name="example1"
-                                                                           class="center-block radio1"></td>
-                                            <td class="answer-text"><input type="radio" name="example1"
-                                                                           class="center-block radio2"></td>
-                                            <td class="answer-text"><input type="radio" name="example1"
-                                                                           class="center-block radio3"></td>
+                                            <td class="text-center"><input type="checkbox" name="cc"/></td>
+                                            <td class="text-center"><input type="checkbox" name="cc"/></td>
+                                            <td class="text-center"><input type="checkbox" name="cc"/></td>
                                             <td class="answer-text"><textarea class="form-control" rows="2"
                                                                               id="l15"></textarea></td>
                                         </tr>
@@ -566,30 +563,30 @@
     })
 </script>
 <script>
-    $(function () {
-        $(".question :radio").click(function (event) {
-            var elClass = $(event.currentTarget).attr('class');
-
-            switch (elClass) {
-                case 'center-block radio1':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer1');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer1');
-                    break;
-                case 'center-block radio2':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer2');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer2');
-                    break;
-                case 'center-block radio3':
-                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
-                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer3');
-                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer3');
-            }
-
-        })
-
-    })
+    //    $(function () {
+    //        $(".question :radio").click(function (event) {
+    //            var elClass = $(event.currentTarget).attr('class');
+    //
+    //            switch (elClass) {
+    //                case 'center-block radio1':
+    //                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+    //                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer1');
+    //                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer1');
+    //                    break;
+    //                case 'center-block radio2':
+    //                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+    //                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer2');
+    //                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer2');
+    //                    break;
+    //                case 'center-block radio3':
+    //                    var currentClass = $(event.currentTarget).parents('tr.question').attr('data-current-answer');
+    //                    $(event.currentTarget).parents('tr.question').removeClass(currentClass).addClass('answer3');
+    //                    $(event.currentTarget).parents('tr.question').attr('data-current-answer', 'answer3');
+    //            }
+    //
+    //        })
+    //
+    //    })
 </script>
 <script>
     $(function () {
