@@ -258,6 +258,10 @@ nav.top-menu {
         }
         .menu-info-block {
           margin-right: 80px;
+          @media (max-width: $md-max-width) {
+            padding: 10px 0;
+
+          }
             .left {
                 float: left;
                 .header-buttons {
