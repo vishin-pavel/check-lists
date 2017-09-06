@@ -11,7 +11,9 @@ module.exports = {
       new webpack.ProvidePlugin({
           _: "lodash",
           $: "jquery",
-          jQuery: "jquery"
+          'window.jQuery': 'jquery',
+          jQuery: "jquery",
+          Tether: "tether"
       }),
     new CleanWebpackPlugin(['public']),
     new HtmlWebpackPlugin({
