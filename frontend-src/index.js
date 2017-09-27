@@ -2,23 +2,25 @@ import {View} from 'backbone';
 import {Model} from 'backbone';
 import {Collection} from 'backbone';
 import {Router} from 'backbone';
+import Backbone from 'backbone';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'c3';
 import templateHeader from 'text-loader!./templates/templateHeader.html';
 import templateTopMenu from 'text-loader!./templates/templateTopMenu.html';
-import templateInformation from 'text-loader!./templates/templateInformation.html'
+import templatePageContentLogin from 'text-loader!./templates/templatePageContentLogin.html';
 import templatePageContentHome from 'text-loader!./templates/templatePageContentHome.html'
 import templateFooter from  'text-loader!./templates/templateFooter.html'
 import templateCounters from 'text-loader!./templates/templateCounters.html'
 import templateLastAdded from 'text-loader!./templates/templateLastAdded.html'
+import templatePageContentRegistration from 'text-loader!./templates/templatePageContentRegistration.html'
 import './common/css/main.scss';
 import './common/css/mixins.scss';
 import './common/css/secondary.scss';
 import './common/css/helpers/base.default.scss';
 import './common/css/components/utilities.scss';
 import './common/css/helpers/fonts.scss';
-import './common/css/forms/dropdowns.scss'
+import './common/css/forms/dropdowns.scss';
 
 class CounterModel extends Model {
     constructor() {
@@ -40,11 +42,22 @@ class LastAddedCollection extends Collection {
     }
 
 }
+
 let Store = {
     counterSheet: new CounterModel(),
     counterCheking: new CounterModel(),
     lastAddedModel: new LastAddedModel(),
     lastAddedCollection: new LastAddedCollection(),
+    appViewPageContent: _.extend({
+        _attr: {},
+        set: function (attrName, attrValue) {
+            this._attr[attrName] = attrValue;
+            this.trigger('change')
+        },
+        get: function (attrName) {
+            return this._attr[attrName];
+        }
+    }, Backbone.Events)
 
 };
 
@@ -54,23 +67,9 @@ Store.lastAddedCollection.add([
     {name: "q", developer: 'w', date: "e", view: 'r'},
 ]);
 
-class AppRouter extends Router {
-    constructor() {
-        super();
-        this.routes = {
-            'reg': 'register'
-        }
-    }
-
-    register() {
-
-    }
-}
-
-
 class ParentView extends View {
-    constructor() {
-        super();
+    constructor(attrs) {
+        super(attrs);
         this.chiledViews = [];
     }
 
@@ -143,26 +142,6 @@ class AppViewCounter extends View {
     }
 }
 
-//Въюха для блока информации
-class AppViewInformation extends ParentView {
-    constructor($el, store) {
-        super();
-        this.$el = $el;
-        this.template = _.template(templateInformation);
-        this.store = store;
-
-    }
-
-    render() {
-        this.$el.html(this.template());
-        this.deleteChildes();
-        this.addChiledView(new AppViewCounter($('#counterSheet'), this.store.counterSheet));
-        this.addChiledView(new AppViewCounter($('#counterCheking'), this.store.counterCheking));
-        this.renderChildes();
-    }
-}
-let viewInformation = new AppViewInformation($('.information'), Store);
-viewInformation.render();
 
 //Вьюха для блока последних добавленных листов
 class AppViewLastAdded extends View {
@@ -180,6 +159,7 @@ class AppViewLastAdded extends View {
     }
 }
 
+
 class AppViewLastAddedCollection extends ParentView {
     constructor($el, store) {
         super();
@@ -195,10 +175,38 @@ class AppViewLastAddedCollection extends ParentView {
         this.renderChildesAppend();
     }
 }
-class AppViewContentHome extends ParentView {
-    constructor($el, store) {
+
+//Вьюха для контента логина
+class AppViewContentLogin extends ParentView {
+    constructor(store) {
         super();
-        this.$el = $el;
+        this.template = _.template(templatePageContentLogin);
+        this.store = store
+    }
+
+    render() {
+        this.$el.html(this.template())
+    }
+}
+// Въюха для контента регистрации
+class AppViewContentRegistration extends ParentView {
+    constructor(store) {
+        super();
+        this.template = _.template(templatePageContentRegistration);
+        this.store = store
+    }
+
+    render() {
+        this.$el.html(this.template())
+    }
+
+}
+//Въюха для контента домашней страницы
+class AppViewContentHome extends ParentView {
+    constructor(store) {
+        super({
+            className: 'page-content-home'
+        });
         this.template = _.template(templatePageContentHome);
         this.store = store
     }
@@ -206,17 +214,30 @@ class AppViewContentHome extends ParentView {
     render() {
         this.$el.html(this.template());
         this.deleteChildes();
-        this.addChiledView(new AppViewLastAddedCollection($('.last-added'), this.store));
+        this.addChiledView(new AppViewLastAddedCollection(this.$el.find('.last-added'), this.store));
+        this.addChiledView(new AppViewCounter(this.$el.find('#counterSheet'), this.store.counterSheet));
+        this.addChiledView(new AppViewCounter(this.$el.find('#counterCheking'), this.store.counterCheking));
         this.renderChildes();
     }
 }
-let viewContentHome = new AppViewContentHome($('.page-content'), Store);
+let viewContentHome = new AppViewContentHome(Store);
 viewContentHome.render();
 //Вьюха для блока контента
-class AppViewPageContent extends ParentView {
+class AppViewPageContent extends View {
+    constructor($el, store) {
+        super();
+        this.$el = $el;
+        this.store = store;
+        this.store.appViewPageContent.on('change', this.render, this)
+    }
 
+    render() {
+        this.$el.html(this.store.appViewPageContent.get('view').$el)
+    }
 }
+new AppViewPageContent($('.page-content-wrapper'), Store);
 
+Store.appViewPageContent.set('view', viewContentHome);
 
 //Вьюха для футера
 class AppViewFooter extends View {
@@ -233,3 +254,29 @@ let viewFooter = new AppViewFooter($('.cwt__footer'));
 viewFooter.render();
 
 Store.counterCheking.set('counter', 100);
+
+
+class AppRouter extends Router {
+    constructor() {
+        super({
+            routes: {
+                'reg': 'register',
+                'log': 'login'
+            }
+        });
+    }
+
+    register() {
+        let viewContentRegistration = new AppViewContentRegistration();
+        viewContentRegistration.render();
+        Store.appViewPageContent.set('view', viewContentRegistration);
+    }
+
+    login() {
+        let viewContentLogin = new AppViewContentLogin();
+        viewContentLogin.render();
+        Store.appViewPageContent.set('view', viewContentLogin);
+    }
+}
+new AppRouter();
+Backbone.history.start();

@@ -1,0 +1,61 @@
+<div class="page-content-inner single-page-login-alpha">
+    <div class="single-page-block margin-top-50">
+        <div class="single-page-block-inner effect-3d-element">
+            <div class="single-page-block-form">
+                <form id="form-validation" name="form-validation" method="POST">
+                    <div class="form-group">
+                        <h1 class="text-center font-size-26">
+                            <small><i class="icmn-users margin-right-10"></i>
+                                Регистрация
+                            </small>
+                        </h1>
+                        <label class="form-label">Логин</label>
+                        <input id="validation-email"
+                               class="form-control color-black"
+                               placeholder="Email или логин"
+                               name="validation[email]"
+                               type="text"
+                               data-validation="[EMAIL]"
+                               data-validation-message="Некорректный email">
+                    </div>
+                    <div class="form-group color-black">
+                        <label class="form-label">Пароль</label>
+                        <input id="validation-password"
+                               class="form-control password color-black"
+                               name="validation[password]"
+                               type="password" data-validation="[L>=6]"
+                               data-validation-message="Пароль должен быть длинее 6 символов"
+                               placeholder="********">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="validation-password-confirm">Повторите пароль</label>
+                        <input id="validation-password-confirm" class="form-control"
+                               name="validation[password-confirm]" type="password"
+                               data-validation="[V==validation[password]]"
+                               data-validation-message="$ does not match the password"
+                               placeholder="********">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary width-200">Зарегистрироваться</button>
+                        <div class="checkbox margin-left-10">
+                            <label>
+                                <input type="checkbox" name="example6" checked>
+                                Почтовая рассылка
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="single-page-block-footer text-center">
+        <ul class="list-unstyled list-inline">
+            <li><a href="javascript: void(0);">Ссылка</a></li>
+            <li class="active"><a href="javascript: void(0);">Активная ссылка</a></li>
+            <li><a href="javascript: void(0);">Ссылка</a></li>
+            <li><a href="javascript: void(0);">Ссылка</a></li>
+        </ul>
+    </div>
+    <!-- End Login Alpha Page -->
+
+</div>
